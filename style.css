@@ -324,6 +324,11 @@ table {
  th, td {
  width: 33%;
 }
+ 
+li {
+    color: #BE8B06;
+}
+
 
 .gallery {
     display: grid;
