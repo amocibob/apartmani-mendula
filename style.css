@@ -152,12 +152,17 @@ iframe {
 
 .nav {
     width: 20%;
-    padding: 0 0 5px 10px;
+    padding: 24px 0 20px 10px;
 }
 
 .navlocation {
     width: 20%;
-    padding: 10px 0 5px 20px;
+    padding: 24px 0 5px 20px;
+}
+
+.nav ul li,
+.navlocation ul li { 
+    padding-bottom: 13px;
 }
 
 .textlefthome {
@@ -195,14 +200,8 @@ iframe {
     width: 80%;
 }
 
-.nav ul,
-.navlocation ul {
-    padding: 10px 0 10px 0;
-}
-
-.nav ul li,
-.navlocation ul li { 
-    padding-bottom: 10px;
+.flags {
+    padding-left: 5px;
 }
 
 .flag-list img {
@@ -214,6 +213,7 @@ iframe {
 
 .flag-list img:hover {
     border: 3px solid #978966;
+    box-shadow: 0 0 10px #FEAD15;
 }
 
 .nav img,
@@ -225,11 +225,16 @@ iframe {
     border: 2px solid #C4AE7C;
 }
 
+.slide:hover,
 .nav img:hover,
 .navlocation img:hover,
-.totop img:hover,
-.slide:hover {
+.totop img:hover {
     border: 2px solid #978966;
+    box-shadow: 0 0 10px #FEAD15;
+}
+
+.homepic img:hover {
+    box-shadow: 0 0 5px #FEAD15;
 }
 
 .nav a {
@@ -327,7 +332,6 @@ li {
     color: #BE8B06;
 }
 
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -362,8 +366,8 @@ li {
 
 .calendar,
 .calendarsunset {
-    height: 270px;
     width: 100%;
+    height: 270px;
     overflow: hidden;
     position:relative;
 }
@@ -374,21 +378,11 @@ li {
     text-align: center;
     height: 80px;
     border: 4px solid #978966;
-    border-bottom: none;
 }
 
 .month ul,
 .monthsunset ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.month ul,
-.monthsunset ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .next,
@@ -398,82 +392,80 @@ li {
 
 .month ul li,
 .monthsunset ul li  {
-    font-size: 15px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 3px;
     border-bottom: 3px solid #978966;
 }
 
-.weekdays,
-.weekdayssunset {
-    font-size: 11px;
-    font-weight: bolder;
-    background-color: #d9d8d8ee;
-    text-align: center;
-    border-width: 3px 4px 0 4px;
-    border-style: solid;
-    border-color: #978966;
-    width: 100%;
-    height: 16px;
-}
-
-.weekdays li,
-.weekdayssunset li {
-    display: inline-block;
-    width: 13%;
-    text-align: center;
-}
-
 .days,
 .dayssunset {
-    height: 170px;
-    font-weight: bolder;
-    padding: 8px 0 0 20px;
-    background-color: #eee;
-    margin: 0;
-    border-width: 3px 4px 0 4px;
+    padding: 8px 0 0 20px; 
+    border-width: 0 4px 0 4px;
     border-style: solid;
     border-color: #978966;
     width: 100%;
+    height: 187px;
+    background-color:  #eee;
 }
 
 .days li,
 .dayssunset li  {
     display: inline-block;
-    padding: 5px 0;
     width: 13%;
     text-align: center;
-    margin-bottom: 5px;
-    font-size: 10px;
+    margin-bottom: 4px;
+    font-weight: bolder;
+    font-size: 11px;
+    background-color:#d9d8d8ee;
+    height: 20px;
 }
 
-.days li .act,
-.dayssunset li .act {
-    padding: 5px;
-    background: #e81009;
-    color: blue;
+li.act {
+    background-color: #FF5F1F;
+    color: #5b4204;
+    border-color: #986f08;
+    padding-top: 3px;
 }
 
-.days li .odl,
-.dayssunset li .odl {
-    padding: 5px;
-    background: linear-gradient(to right,
-            red 0%,
-            red 50%,
-            white 50%,
-            white 100%);
-    color: blue;
+li.odl {
+    background: linear-gradient(to right,  #FF5F1F  35%,#ccb587 50%);
+    border: 1px solid;
+    color: #5b4204;
+    border-color: #986f08;
+    padding-top: 3px;
 }
 
-.days li .dol,
-.dayssunset li .dol {
-    padding: 5px;
-    background: linear-gradient(to right,
-            white 0%,
-            white 50%,
-            red 50%,
-            red 100%);
-    color: blue;
+li.dol {
+    background: linear-gradient(to right,#ccb587 50%, #FF5F1F 66%);
+    border: 1px solid; 
+    color: #5b4204;
+    border-color: #986f08;
+    padding-top: 3px;
+}
+
+li.empty {
+    background-color: #eee;
+    color: #eee;
+    padding-top: 3px;
+}
+
+li.day {
+    border: 1px solid;
+    padding-top: 3px;
+    color: #7c5a05;
+    margin-bottom: 10px;
+    border-color: #986f08;
+    background-color: #d3ad62;
+}
+
+
+li.free {
+    border: 1px solid;
+    color: #986f08;
+    border-color: #986f08;
+    background-color: #ccb587;
+    padding-top: 3px;
 }
 
 .slide {
@@ -483,7 +475,6 @@ li {
     overflow: hidden;
     position: relative;
     border: 4px solid #C4AE7C;
-    border-radius: 5%;
 }
 
 .slide:hover {
@@ -619,6 +610,7 @@ li {
 .backward:hover,
 .forward:hover {
     background-color:#00000066;
+    box-shadow: 0 0 10px #FEAD15;
 }
 
 .homepic,
@@ -679,8 +671,8 @@ li {
     transition: 0.3s ease;
 }
 
-.month .prev,
-.month .next {
+.prev,
+.next {
     background-color: #00000019;
     font-weight: bold;
     font-size: 20px;
@@ -688,48 +680,22 @@ li {
     margin-top: -12px;
 }
 
-.month .prev {
+.prev {
     position: absolute;
     left: 0;
     border-radius: 0 6px 6px 0;
 }
 
-.month .next {
+.next {
     position: absolute;
     right: 0;
     border-radius: 6px 0 0 6px;
 }
 
-.month .prev:hover,
-.month .next:hover {
+.prev:hover,
+.next:hover {
     background-color:#0000004D;
-}
-
-.monthsunset .prev,
-.monthsunset .next {
-    background-color: #00000019;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 16px;
-    margin-top: -12px;
-}
-
-.monthsunset .prev {
-    position: absolute;
-    left: 0;
-    border-radius: 0 6px 6px 0;
-}
-
-.monthsunset .next {
-    position: absolute;
-    right: 0;
-
-    border-radius: 6px 0 0 6px;
-}
-
-.monthsunset .prev:hover,
-.monthsunset .next:hover {
-    background-color:#0000004d;
+    box-shadow: 0 0 5px #FEAD15;
 }
 
 .zoom-in-out-box2 {
@@ -772,10 +738,8 @@ iframe:hover {
     border: 2px solid #978966;
 }
 
-
 @media screen and (max-width: 1020px) {
-
-    
+   
 .wrapperhome,
 .wrappersunrise,
 .wrappersunset,
@@ -910,6 +874,17 @@ iframe:hover {
     padding-left: 0;
 }
 
+
+.nav {
+    width: 20%;
+    padding: 24px 0 20px 10px;
+}
+
+.navlocation {
+    width: 20%;
+    padding: 24px 0 5px 20px;
+}
+
 .textleftlocation, 
 .textlefthome {
     padding: 10px 5px 0 0;
@@ -938,4 +913,17 @@ iframe {
 }
 
 
+
+@media screen and (max-width: 768px) {
+.textleftsurroundings,
+.textleftsunset,
+.textleftsunrise  {
+    height: 290px;
+}
+
+.textleftpula {
+    height: 330px;
+}
+}
+ 
 
