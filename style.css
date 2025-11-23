@@ -886,28 +886,24 @@ iframe {
 
 
  
-
-
-
-
 @media screen and (max-width: 600px) {
    
 
 .textlefthome {
     padding: 10px 10px 10px 20px;
-    width: 70%;
+    width: 80%;
 }
 
 .textleftlocation {
-    padding: 10px 20px 0 15px;
-    width: 75%;
+    padding: 10px 10px 0 10px;
+    width: 80%;
 }
 
 .textleftsunrise,
 .textleftsunset,
 .textleftsurroundings,
 .textleftpula {
-    width: 95%;
+    width: 100%;
 }
 
 .textleftsurroundings {
@@ -930,6 +926,9 @@ iframe {
     padding: 10px 20px 0 10px;
     width: 80%;
 }
+}
+
+
 
 
 
