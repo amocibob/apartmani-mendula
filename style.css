@@ -147,7 +147,7 @@ iframe {
 
 .surroundingsp p,
 .pulap p {
-    padding-top: 10px;
+    padding: 10px 0 0 0;
 }
 
 .nav {
@@ -753,7 +753,7 @@ iframe:hover {
 .left-sectionlocation, 
 .right {
     flex: 1 1 100%;
-    padding: 10px;
+    padding: 0px 10px 0 10px;
  }
 
 .logo {
@@ -764,7 +764,7 @@ iframe:hover {
 }
 
 .galleries {
-    padding-left: 0;
+    padding: 0 0 0 0;
 }
 
 .galleries {
@@ -805,13 +805,14 @@ iframe:hover {
 .left-sectionpula,
 .left-sectionsurroundings,
 .left-sectionlocation {
-    padding-left: 13px;
+    padding-left:13px;
 }
 
 .totop {
     text-align: center;
     padding: 30px 0 0 0;
 }
+
 
 .gallery img {
     width: 100%;
@@ -823,13 +824,23 @@ iframe:hover {
     padding: 10px;
 }
 
+.month ul li,
+.monthsunset ul li  {
+    font-size:13px;
+}
 
 .days {
-    padding-left: 5px;
+    padding :10px  10px 0 10px;
 }
 
 .days li {
     width: 13%;
+}
+
+
+.navlocation {
+    width: 20%;
+    padding: 24px 0 0 0;
 }
 
 .nav {
@@ -839,39 +850,48 @@ iframe:hover {
 
 .navlocation {
     width: 15%;
-    padding: 24px 0 0 0;
+    padding-top: 24px;
 }
 
 .textlefthome {
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0 0 10px;
     width: 85%;
 }
 
 .textleftlocation {
-    padding: 10px 5px 0 0;
-    width: 80%;
+    padding-top: 10px 0 0 0;
+    width: 85%;
 }
 
-.textleftsurroundings,
-.textleftsunset,
 .textleftsunrise  {
-    height: 270px;
+    height: 340px;
 }
 
-.textleftpula {
+.textleftsunset {
     height: 330px;
 }
+
+.textleftsurroundings {
+    height: 290px;
+} 
+
 
 .textleftsunrise,
 .textleftsunset,
 .textleftsurroundings,
 .textleftpula {
     width: 100%;
-    padding: 10px 0 0 0;
+    padding: 10px 0 10px 0;
 }
 
+
+.textleftpula {
+    height: 380px;
+}
+
+
 .homepic {
-    padding: 15px 5px 15px 0;
+   text-align:center;;
 }
 
 iframe {
@@ -886,50 +906,3 @@ iframe {
 
 
  
-@media screen and (max-width: 600px) {
-   
-
-.textlefthome {
-    padding: 10px 10px 10px 20px;
-    width: 80%;
-}
-
-.textleftlocation {
-    padding: 10px 10px 0 10px;
-    width: 80%;
-}
-
-.textleftsunrise,
-.textleftsunset,
-.textleftsurroundings,
-.textleftpula {
-    width: 100%;
-}
-
-.textleftsurroundings {
-    padding: 0 20px 0 25px;
-    height: 420px;
-}
-
-.textleftpula  {
-    padding: 0 20px 0 25px;
-    height: 420px;
-}
-
-.textleftsunset,
-.textleftsunrise  {
-    height: 420px;
-    padding: 0 22px 0 20px;   
-}
-
-.textright {
-    padding: 10px 20px 0 10px;
-    width: 80%;
-}
-}
-
-
-
-
-
-
