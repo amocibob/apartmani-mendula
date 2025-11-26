@@ -79,7 +79,7 @@ iframe {
     margin: auto;
     position: relative;
     text-align: left;
-    width: 80%;
+    width: 76%;
     padding-bottom: 45px;
 }
 
@@ -134,6 +134,16 @@ iframe {
     text-align: center;
 }
 
+
+.sunrisep,
+.sunsetp,
+.surroundingsp,
+.pulap,
+.locationp {
+    font: 18px Arial, sans-serif;
+    text-align: center;
+}
+
 .sunrisep p,
 .sunsetp p,
 .surroundingsp p,
@@ -168,6 +178,7 @@ iframe {
 
 .textlefthome {
     width: 80%;
+    padding-bottom: 164px;
 }
 
 .textlefthome img {
@@ -286,7 +297,6 @@ h2 {
 
 .galleries {
     padding-left: 23px;
-    padding-top: 19px;
 }
 
 .flags ul {
@@ -508,6 +518,21 @@ li.free {
     opacity: 0;
 }
 
+.mySlides {
+    display: none;
+    padding-bottom: 25px;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mySlides:first-child {
+    display: block;
+}
+
 .slide>div:nth-child(2) {
     animation-delay: 2s;
 }
@@ -567,21 +592,6 @@ li.free {
                    box-shadow: 0 3px 3px  #978966;
 }
 
-.mySlides {
-    display: none;
-    padding-bottom: 25px;
-
-}
-
-.mySlides:first-child {
-    display: block;
-}
-
-.mySlides img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
 .numbertext {
     color: #f2f2f2;
