@@ -286,6 +286,7 @@ h2 {
 
 .galleries {
     padding-left: 23px;
+    padding-top: 19px;
 }
 
 .flags ul {
@@ -1096,7 +1097,7 @@ iframe {
 }
 
 .welcome {
-    height: 350px;
+    height: 550px;
 }
 
 iframe {
