@@ -79,7 +79,7 @@ iframe {
     margin: auto;
     position: relative;
     text-align: left;
-    width: 76%;
+    width: 80%;
     padding-bottom: 45px;
 }
 
@@ -138,7 +138,8 @@ iframe {
 .sunsetp p,
 .surroundingsp p,
 .pulap p,
-.locationp p {
+.locationp p,
+.infop p {
     border-bottom: 1px solid #C4AE7C;
     margin: 0 35px 0 25px;
     padding: 1px;
@@ -166,8 +167,14 @@ iframe {
 }
 
 .textlefthome {
-    padding: 10px 30px 10px 0;
     width: 80%;
+}
+
+.textlefthome img {
+    border: none;
+    box-shadow: none;
+    width: 60%;
+    padding: 90px 0 0 50px;
 }
 
 .textleftlocation {
@@ -709,9 +716,18 @@ li.free {
     box-shadow: 0 0 5px #FEAD15;
 }
 
+.maps  {
+    padding: 10px;
+}
+
 .maps p {
     padding: 1px;
     color: #BE8B06;
+}
+
+.info p {
+    padding: 10px 27px 0 15px;
+
 }
 
 .google {
@@ -868,6 +884,12 @@ iframe:hover {
     padding: 10px 0 10px 0;
 }
 
+.textlefthome img {
+    border: none;
+    box-shadow: none;
+    padding: 90px 0 0 80px;
+}
+
 .homepic {
    text-align:center;
 }
@@ -881,9 +903,6 @@ iframe {
     padding-top: 5%;
 }
 }
-
-
-
 
 @media screen and (max-width: 600px) {
 
@@ -990,8 +1009,7 @@ iframe {
     padding: 24px 0 0 10px;
 }
 
-.textleftlocation,
-.textlefthome {
+.textleftlocation {
     padding-top: 10px 0 0 0;
     padding-left: 0;
     padding-right: 0;
@@ -1007,11 +1025,11 @@ iframe {
 }
 
 .textleftsurroundings {
-    height: 220px;
+    height: 245px;
 } 
 
 .textleftpula {
-    height: 270px;
+    height: 300px;
 }
 
 .textleftsunrise,
@@ -1021,6 +1039,19 @@ iframe {
     width: 100%;
     padding: 10px 0 10px 0;
 }
+
+.textlefthome  {
+    width: 100%;
+    padding: 80px 0 0 0;
+}
+
+
+.textlefthome img {
+    width: 100%;
+    padding: 60px 0 0 0;
+    padding-left: 0;
+}
+
 
 .homepic {
    text-align:center;
@@ -1036,24 +1067,15 @@ iframe {
 }
 }
 
-
-
-
-
 @media (max-width: 550px) {
-  .textlefthome {
-    padding: 10px 0 0 10px;
-    width: 85%;
+
+.textlefthome  {
+    width: 80%;
 }
 
-.welcome {
-    height: 315px;
-}
-
-
-.textleftlocation {
-    padding: 10px 10px 0 10px;
-    width: 85%;
+.textlefthome img {
+    width: 80%;
+    padding: 40px 0 0 35px;
 }
 
 .textleftsunrise  {
@@ -1074,7 +1096,7 @@ iframe {
 }
 
 .welcome {
-    height: 700px;
+    height: 350px;
 }
 
 iframe {
@@ -1093,18 +1115,9 @@ iframe {
  
 
 @media (max-width: 500px) {
-  .textlefthome {
-    padding: 10px 0 0 10px;
-    width: 85%;
-}
-
-.welcome {
-    height: 315px;
-}
-
 
 .textleftlocation {
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 0 0;
     width: 85%;
 }
 
@@ -1120,7 +1133,6 @@ iframe {
     height: 280px;
 } 
 
-
 .textleftpula {
     height: 380px;
 }
@@ -1133,12 +1145,6 @@ iframe {
     width: 99%;
     height: 200px;
 }
-
-.navlocation {
-    width: 15%;
-    padding: 24px 0 0 0;
-}
-
 }
 
 
