@@ -65,6 +65,10 @@ iframe {
     border-top: 10px solid #978966;
 }
 
+.wrapperhome {
+    border-top: 10px solid #978966;
+}
+
 .wrapperhome,
 .wrappersunrise,
 .wrappersunset,
@@ -330,6 +334,7 @@ h2 {
 table, th, td {
     text-align: center;
     border: 1px solid #C4AE7C;
+    color: #BE8B06;
 }
 
 th {
@@ -345,7 +350,7 @@ td {
 }
 
 table {
-  width: 100%;
+    width: 100%;
 }
 
  th, td {
