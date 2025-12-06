@@ -353,7 +353,6 @@ table, th, td {
 th {
     height: 18px;
     -webkit-font-smoothing: antialiased;
-    color: #BE8B06 !important;
     color: rgb(190, 139, 6) !important;
     background-color: #dbdbdb; 
 }
@@ -361,9 +360,9 @@ th {
 td {
     height: 20px;
     -webkit-font-smoothing: antialiased;
-    color: #BE8B06 !important;
     color: rgb(190, 139, 6) !important;
     background-color: #eee;
+    font-style: bolder;
 }
 
 table {
