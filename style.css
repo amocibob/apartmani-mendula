@@ -362,7 +362,7 @@ td {
     -webkit-font-smoothing: antialiased;
     color: rgb(190, 139, 6) !important;
     background-color: #eee;
-    font-style: bolder;
+    font-weight: bolder;
 }
 
 table {
