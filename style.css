@@ -134,6 +134,8 @@ img {
 }
 
 .linkovi {
+     display: flex;
+    align-items: center;
     width: 100%;
     padding: 0 118px 0 118px;
     text-align: center;
@@ -970,10 +972,6 @@ h4 {
 
 @media screen and (max-width:1000px) {
 
-.linkovi {
-    padding: 0 100px 0 100px;
-}
-
  .zz {
     padding-top: 30%;
 }
@@ -1155,10 +1153,6 @@ h4 {
 
 .mapsp {
     padding-bottom: 0;
-}
-
-.linkovi {
-    padding-right: 200px;   
 }
 
 .linkovi td {
