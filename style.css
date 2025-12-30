@@ -697,13 +697,14 @@ li.free {
 .numbertext {
     color: #f2f2f2;
     font-size: 14px;
-    padding: 40px 0 0 12px;
+    padding: 120px 0 0 12px;
     position: absolute;
 }
 
 .backward,
-.forward {
-    background-color:#00000033;
+.forward
+.backward-is-active,
+.forward-is-active {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -714,9 +715,8 @@ li.free {
     padding: 5px 10px 5px 10px;
     margin: -50px 28px 0 28px;
     font-weight: bold;
-    font-size: 25px;
-    border-bottom: 3px solid #88774b;
-    border-top: 3px solid #88774b;
+    height: 100%;
+    width: 100%;
 }
 
 .backward,
@@ -724,21 +724,6 @@ li.free {
     -webkit-user-select: none; 
     -ms-user-select: none;       
     user-select: none;
-}
-
-.backward {
-    right: 0;
-    border-radius: 6px 0 0 6px;
-}
-
-.forward {
-    left: 0; 
-    border-radius: 0 6px 6px 0;
-}
-
-.backward:hover,
-.forward:hover {
-    background-color:#00000066;
 }
 
 .homepic {
@@ -750,7 +735,7 @@ li.free {
 }
 
 .homepic:hover,
-.homepic-active {
+.homepic-is-active{
     transition: transform 0.9s ease;     
     transform: scale(1.10);
     padding: 20px 0 20px 0;
@@ -885,14 +870,12 @@ h1 {
 }
 
 .container-dimensions:hover,
-.container-dimensions-is-active {
-     transition: transform 0.9s ease;    
+.container-dimensions-is-active {   
     transform: scale(1.20);
 }               
 
 .homepic:hover,
 .homepic-active {
-    transition: transform 0.9s ease;     
     transform: scale(1.13);
 }                 
 
@@ -1009,6 +992,8 @@ h4 {
     width: auto;
     padding: 5px 10px 5px 10px;
     margin: -10px 28px 0 28px;
+    width: 100%;
+    height: 100%;
 }
 
 .month ul li,
@@ -1088,7 +1073,7 @@ h4 {
 }
 
 h4 {
-    font: 8px Arial, sans-serif;
+    font: 12px Arial, sans-serif;
     font-weight: bold;
 }
 
