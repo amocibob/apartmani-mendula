@@ -138,13 +138,13 @@ img {
     width: 20%;
     text-align: center;
     height: 16px; 
-    padding: 0 40px 0 40px;      
+    font-size: 20px;     
 }
 
 .linkovi a {
     display: block;
     position: relative;
-    padding: 0.1em 0;
+    padding: 0.1em 0; 
 }
 
 .linkovi a::after {
@@ -153,10 +153,10 @@ img {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 0.2em;
+  height: 0.1em;
   background-color: #ffffff;
   opacity: 0;
-  transition: opacity 800ms, transform 300ms;
+  transition: opacity 800ms, transform 300ms;     
 }
 
 .linkovi  a::after {
@@ -384,7 +384,7 @@ h3 {
 }
 
 h4 {
-    font: 14px Arial, sans-serif;
+    font: 18px Arial, sans-serif;
     font-weight: bold;
     color: #ffffff;;
     margin: 0;
@@ -694,9 +694,9 @@ li.free {
 }
 
 .numbertext {
-    color: #f2f2f2;
-    font-size: 14px;
-    padding: 120px 0 0 12px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 120px 0 0 50px;
     position: absolute;
 }
 
@@ -791,6 +791,11 @@ h1 {
     font-weight: bold;
 }
 
+h4 {
+    font: 16px Arial, sans-serif;
+    font-weight: bold;
+}
+
 .ab {
     display: flex;
     flex-wrap: wrap;
@@ -804,7 +809,7 @@ h1 {
     text-align: center;
     width: 100%;
     padding: 0 20px 0 20px;
-    color:  #BE8B06;
+    color: #000000;
 }
 
 .icons table {
@@ -818,10 +823,6 @@ h1 {
 
 .linkovi {
     padding-top: 5px;
-}
-
-.linkovi td {
-    padding: 0 25px 0 25px;      
 }
 
 .calendar,
@@ -882,12 +883,8 @@ h1 {
 }
 
 h4 {
-    font: 12px Arial, sans-serif;
+    font: 14px Arial, sans-serif;
     font-weight: bold;
-}
-
-.linkovi td {
-    padding: 0 10px 0 10px;      
 }
 }
 
@@ -901,6 +898,24 @@ h4 {
     width: 100%;
 } 
 
+.galleries {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 20px; 
+    max-width: 100%;
+    padding: 0 28px  5px 30px;
+}
+
+.slide {
+    margin: 0px 0 0px 0; 
+    overflow: hidden;
+    position: relative;
+    border-radius: 3%;
+    border: 1px solid;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.45);
+    aspect-ratio: 3/2; 
+}
+
 .logo {
     flex: 1 1 40%;
      padding-left: 15%;   
@@ -913,9 +928,8 @@ h4 {
 .zz {
     padding-top:25%;
 }
-
 h4 {
-    font: 10px Arial, sans-serif;
+    font: 22px Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -932,7 +946,6 @@ h4 {
     text-align: center;
     width: 100%;
     padding: 0 0 0 0;
-    color:  #BE8B06;
     font-size: 8px;
 }
 
@@ -952,7 +965,7 @@ h4 {
 }
 
 h4 {
-    font: 10px Arial, sans-serif;
+    font: 12px Arial, sans-serif;
     font-weight: bold;
 }
 
@@ -961,13 +974,6 @@ h4 {
     height: 30px;
 }
 
-.galleries {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 13px; 
-    max-width: 100%;
-    overflow: hidden;
-}
 
 .flags img{
     width: 25px;
@@ -1021,19 +1027,6 @@ h4 {
     font-size: 8px;
     margin: 0 0 0 0;
 }  
-
-.container-dimensions:hover,
-.container-dimensions-is-active {
-    transition: transform 0.9s ease;   
-    transform: scale(1.30);
-}
-
-.homepic:hover,
-.homepic-active {
-    transition: transform 0.9s ease;     
-    transform: scale(1.15);
-}                 
-
 
 @media (max-width: 550px) {
 
