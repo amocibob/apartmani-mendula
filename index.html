@@ -2831,7 +2831,7 @@ https://unpkg.com/swiper@11.2.10/swiper-bundle.css" />
 <script src="https://unpkg.com/swiper@11.2.10/swiper-bundle.js"></script>
 <script>
   let swiper;
-  const mobileQuery = window.matchMedia("(max-width: 768px)");
+  const mq = window.matchMedia("(max-width: 768px)");
 
   function initSwiper(isMobile) {
     if (swiper) swiper.destroy(true, true);
@@ -2842,7 +2842,16 @@ https://unpkg.com/swiper@11.2.10/swiper-bundle.css" />
       loop: true,
       centeredSlides: isMobile,
       grabCursor: isMobile,
-      allowTouchMove: isMobile, // swipe only on mobile
+      allowTouchMove: isMobile,
+
+      navigation: {
+        nextEl: ".backward",
+        prevEl: ".forward",
+      },
+
+      keyboard: {
+        enabled: !isMobile,
+      },
 
       coverflowEffect: {
         rotate: 0,
@@ -2850,60 +2859,27 @@ https://unpkg.com/swiper@11.2.10/swiper-bundle.css" />
         depth: 0,
         modifier: 1,
       },
+
+      on: {
+        click(swiper) {
+          if (!mq.matches && swiper.clickedIndex !== undefined) {
+            swiper.slideToLoop(swiper.clickedIndex);
+          }
+        },
+      },
     });
   }
 
-  function initDesktopClicks() {
-    document.querySelectorAll(".swiper-slide").forEach(slide => {
-      slide.onclick = () => {
-        if (mobileQuery.matches) return;
-
-        document
-          .querySelectorAll(".swiper-slide")
-          .forEach(s => s.classList.remove("is-active"));
-
-        slide.classList.add("is-active");
-      };
-    });
-  }
-
-  function initDesktopSlideshow() {
-    document.querySelectorAll(".swiper-container").forEach(container => {
-      let index = 0;
-      const slides = container.querySelectorAll(".swiper-slide");
-      const next = container.querySelector(".backward");
-      const prev = container.querySelector(".forward");
-
-      function show(i) {
-        index = (i + slides.length) % slides.length;
-        slides.forEach((s, n) => {
-          s.style.display = n === index ? "block" : "none";
-        });
-      }
-
-      next?.addEventListener("click", () => {
-        if (!mobileQuery.matches) show(index + 1);
-      });
-
-      prev?.addEventListener("click", () => {
-        if (!mobileQuery.matches) show(index - 1);
-      });
-
-      show(index);
-    });
-  }
-
-  // INIT
+  // Init
   document.addEventListener("DOMContentLoaded", () => {
-    initSwiper(mobileQuery.matches);
-    initDesktopClicks();
-    initDesktopSlideshow();
+    initSwiper(mq.matches);
   });
 
-  // RE-INIT ON RESIZE
-  mobileQuery.addEventListener("change", e => {
+  // Re-init on resize
+  mq.addEventListener("change", e => {
     initSwiper(e.matches);
   });
 </script>
+
 </body>
 </html>

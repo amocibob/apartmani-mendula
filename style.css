@@ -944,7 +944,27 @@ h4 {
 
 @media screen and (max-width:1000px) { 
     
-
+.backward,
+.forward,
+.backward-is-active,
+.forward-is-active {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin: -50px 28px 0 28px;
+    background-color: transparent; 
+    border-bottom: 0;
+    border-top: 0;
+    height: 100%;
+    width: 100%;
+}
+.backward:hover,
+.forward:hover {
+    background-color: transparent;
+}
 
 .zz {
     padding-top: 30%;
