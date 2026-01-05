@@ -328,7 +328,8 @@ img {
 .icons {
     text-align: center;
     width: 100%;
-    color: #978966;
+
+    color: black;   
     display: block;
     position: relative;
     padding: 0.1em 0;    
@@ -735,8 +736,17 @@ li.free {
     padding: 27px 28px 15px 28px;
 }
 
+
+.container-dimensions,
+.swiper-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 25px 0 35px 0;
+}
+
 .container-dimensions:hover,
-.container-dimensions-is-active {
+.swiper-container:hover {
     transition: transform 0.9s ease;   
     transform: scale(1.14);
 }
@@ -780,7 +790,7 @@ li.free {
     z-index: 10;
     width: auto;
     padding: 5px 10px 5px 10px;
-    margin: -50px 28px 0 28px;
+    margin: -50px 0 0 0;
     font-weight: bold;
     font-size: 25px;
     border-bottom: 3px solid #88774b;
@@ -1151,7 +1161,14 @@ h4 {
   .forward,
   .backward {
     display: none;
-  }
+ }
+
+ .numbertext {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 30px 0 0 45px;
+    position: absolute;
+}
 }
 
 
