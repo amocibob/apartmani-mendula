@@ -87,15 +87,22 @@ img {
     width: 85%;
 }
 
-.title {
-    width: 100%;
+.title { 
+    padding:0 0 20px 0;
+}
+
+.title,
+.titleinfo,
+.titleloc {
     text-align: center;
     font: 18px Arial, sans-serif;
     width: 100%;   
     margin:0 30px 0 30px;
 }
 
-.title p {
+
+.title p,
+.titleinfo p {
   display: block;
   position: relative;
   padding: 0.1em 0;
@@ -113,16 +120,41 @@ img {
   transition: opacity 800ms, transform 300ms;
 }
 
+.titleinfo p::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color:  #000000;
+  opacity: 0;
+  transition: opacity 800ms, transform 300ms;
+}
+
 .title p::after {
     opacity: 1;
     transform: scale(0);
     transform-origin: center;
 }
 
+.titleinfo p::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+
 .title p:hover::after,
 .title p:focus::after {
     transform: scale(1);
 }
+
+.titleinfo p:hover::after,
+.titleinfo p:focus::after {
+    transform: scale(1);
+}
+
 
 .linkovi {
     width: 100%;    
@@ -174,8 +206,15 @@ img {
 .textsunset,
 .textwelcome,
 .textpula,
-.textsurroundings, 
+.textsurroundings  {
+    padding: 35px 23px 0 27px;
+}
+
 .textlocation  {
+    padding: 0 23px 0 27px;
+}
+
+.textwelcome  {
     padding: 0 23px 0 27px;
 }
 
@@ -231,29 +270,16 @@ img {
     width: 120%;          
 }
 
+.swiper-container:hover {
+    transition: transform 0.9s ease;     
+    transform: scale(1.10);
+}                 
+
 .swiper-container {
      width: 100%;
      margin: 0 30px 0 30px; 
      overflow: hidden; 
      position: relative;                      
-}
-
-.container-dimensions {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 27px 28px 15px 28px;
-}
-
-.container-dimensions:hover,
-.container-dimensions-is-active {
-    transition: transform 0.9s ease;   
-    transform: scale(1.14);
-}
-
-.container-dimensions img {
-    vertical-align: middle;
-    border: 1px solid #000000;
 }
 
 .swiper-container img {
@@ -264,11 +290,6 @@ img {
     vertical-align: middle;
 }
 
-.mySlides {
-    display: none;
-    padding-bottom: 25px;
-}
-
 .swiper-slide {
     display: none;
     background-position: center;
@@ -276,17 +297,7 @@ img {
     width: 100%;
 }
 
-.mySlides:first-child {
-    display: block;
-}
-
 .swiper-slide {
-    display: block;
-}
-
-.mySlides img {
-    width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -328,8 +339,7 @@ img {
 .icons {
     text-align: center;
     width: 100%;
-
-    color: black;   
+    color: #978966;
     display: block;
     position: relative;
     padding: 0.1em 0;    
@@ -729,49 +739,6 @@ li.free {
     }
 }
 
-.container-dimensions {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 27px 28px 15px 28px;
-}
-
-
-.container-dimensions,
-.swiper-container {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 25px 0 35px 0;
-}
-
-.container-dimensions:hover,
-.swiper-container:hover {
-    transition: transform 0.9s ease;   
-    transform: scale(1.14);
-}
-
-.container-dimensions img {
-    vertical-align: middle;
-    border: 1px solid #000000;
-}
-
-.mySlides {
-    display: none;
-    padding-bottom: 25px;
-}
-
-.mySlides:first-child {
-    display: block;
-}
-
-
-.mySlides img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 .numbertext {
     color: #ffffff;
     font-size: 18px;
@@ -819,7 +786,7 @@ li.free {
 }
 
 .homepic {
-    padding: 16px 28px 5px 28px;
+    padding: 16px 28px 0 28px;
 }
 
 .homepic img {
@@ -829,12 +796,13 @@ li.free {
 .homepic:hover,
 .homepic-is-active{
     transition: transform 0.9s ease;     
-    transform: scale(1.10);
-    padding: 20px 0 20px 0;
+    transform: scale(1.05);
+    padding: 20px 0 0 0;
 }                 
 
-.maps  {
+.mapsp  {
     padding: 0 10px 0 10px;
+    margin: 0 0 0 0;
 }
 
 .maps p {
@@ -848,13 +816,13 @@ li.free {
     text-align: center;
     width: 100%;
     color: #000000;
-    padding: 0 23px 0 30px;    
+    padding: 0 23px 0 0;    
 }
 
 .google {
     padding-top: 11px;
     width: 100%;
-    margin: 11px 25px 0px 25px;
+    margin: 0 25px 0px 25px;
 }
 
 iframe {
@@ -864,6 +832,10 @@ iframe {
 }
 
 @media screen and (max-width: 1200px) {
+
+.title {
+    padding: 0 0 0px 0;
+}
 
 
 .logo p {
@@ -944,12 +916,6 @@ h4 {
     width: 13%;
 }
 
-.homepic:hover,
-.homepic-active {
-    transition: transform 0.9s ease;     
-    transform: scale(1.1);
-}                 
-
 }
 
 @media screen and (max-width:1000px) { 
@@ -982,18 +948,7 @@ h4 {
 
 .numbertext {
     padding: 100px 0 0 50px;
-}
-
-
-.container-dimensions:hover,
-.container-dimensions-is-active {   
-    transform: scale(1.20);
-}               
-
-.homepic:hover,
-.homepic-active {
-    transform: scale(1.13);
-}                 
+}             
 
 .links img {
     width:20px;
@@ -1037,17 +992,8 @@ h4 {
     border: 1px solid;
     box-shadow: 0 6px 4px rgba(0, 0, 0, 0.45);
     aspect-ratio: 3/2; 
-}
-.container-dimensions:hover,
-.container-dimensions-is-active {   
-    transform: scale(1.0);
-}               
-
-.homepic:hover,
-.homepic-active {
-    transform: scale(1.0);
-}                 
-
+}             
+  
 .logo {
     flex: 1 1 40%;
      padding-left: 15%;   
@@ -1068,6 +1014,14 @@ h4 {
 
 .linkovi td {
     padding: 0 0 0 0;      
+}
+
+.textsunrise,
+.textsunset,
+.textwelcome,
+.textpula,
+.textsurroundings  {
+    padding: 15px 23px 0 27px;
 }
 
 .welcome {
@@ -1169,15 +1123,17 @@ h4 {
     padding: 30px 0 0 45px;
     position: absolute;
 }
-}
-
-
-@media (max-width: 550px) {
 
 .wrapper {
    padding-bottom: 10px;                                             ;
 } 
 
+}
+
+@media (max-width: 550px) {
+
+
+   
 .zz  {
     padding-top: 20%; 
     font-size: 9px;        
