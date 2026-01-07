@@ -28,19 +28,21 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid  #978966;
 }     
 
-body::-webkit-scrollbar-thumb:hover{
+body::-webkit-scrollbar-thumb:hover {
     border-radius: 5px;
     background: white;
     border: 3px solid  #978966;
 } 
 
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
+.header { 
+    background-image: url('fotke/home.jpg'); 
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100%;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover    
 }
 
 .logo {
@@ -57,11 +59,6 @@ body::-webkit-scrollbar-thumb:hover{
     letter-spacing: 0.2em;
     margin: 0 25px 0 25px;
     color:#BE8B06;
-}
-
-.logo img {
-    width: 50px;
-    height: 50px;
 }
 
 p  {
@@ -117,7 +114,7 @@ img {
     color: #BE8B06;
     font-family: 'Fantasy', serif;    
     font-size: 22px;
-    padding: 0 0 5px 0;
+    padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
 
@@ -235,19 +232,22 @@ img {
     display: flex;
     flex: 1 1 40%;
     justify-content: flex-end;
-    padding: 5px  5px 0 0;
+    padding:0  5px 0 0;
     align-items:start;
     background: rgba(191, 191, 191, 0.3);
 }
 
 .flags table {
-    border-radius: 2%;
     text-align: center;
+    padding:0 0 0 0;
+    margin: 0 0 0 0;    
 }
 
 .flags td {
-    width: 35px;
-    text-align: center;
+    padding:0 0 0 0;
+    margin: 0 0 0 0;
+    height: 30px;
+    font-family: 'Fantasy', serif;         
 }
 
 .flags img,
@@ -324,7 +324,10 @@ img {
     width: 100%;
     color: #978966;
     display: block;
-    position: relative; 
+    position: relative;
+    border-bottom: 1px solid #BE8B06; 
+    border-top: 1px solid #BE8B06; 
+    margin: 0 30px 0 30px;       
 }
 
 .icons table {
@@ -345,10 +348,7 @@ img {
 .icons img {
     width: 65px;
     height: 50px;
-}
-
-.icons:hover {
-    border-bottom: 1px solid #BE8B06;
+    padding-top: 10px;    
 }
 
 .icons::after {
@@ -432,7 +432,7 @@ img {
 .zz table {
     background: rgba(191, 191, 191, 0.3);
     width: 100%;
-    padding: 0 6.5% 0 6.5%; 
+    padding: 0 6.5% 1% 6.5%; 
 }
 
 .zz td {
@@ -788,7 +788,7 @@ li.free {
 }
 
 .homepic {
-    padding: 16px 28px 0 28px;
+    padding: 10px 28px 0 28px;
 }
 
 .homepic img {
@@ -799,16 +799,18 @@ li.free {
 .homepic-is-active{
     transition: transform 0.9s ease;     
     transform: scale(1.05);
-    padding: 20px 0 0 0;
 }                 
 
 .mapsp {
+    width: 100%; 
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.mapsp p{
     font: 18px Arial, sans-serif;
     text-align: center;
     width: 100%; 
-}
-
-.mapsp p {
     color: #BE8B06;
     margin: 0 0 0 0; 
     padding: 10px 0 0 0;  
@@ -871,22 +873,6 @@ h4 {
     position: relative;
     width: 100%;
     padding: 0 0 0 0;
-}
-
-.icons { 
-    text-align: center;
-    width: 100%;
-    padding: 0 20px 0 20px;
-    color: #000000;
-}
-
-.icons table {
-    width: 100%;
-}
-
-.icons td{ 
-    height: auto;
-    text-align: center;
 }
 
 .linkovi {
@@ -954,6 +940,11 @@ h4 {
 .zz img {
     width:50px;
     height: 40px;
+}
+
+.icons img {
+    width: 50px;
+    height: 45px;
 }
 
 h4 {
@@ -1037,21 +1028,6 @@ h4 {
     font-size: 8px;
 }
 
-.icons table {
-    width: 100%;
-}
-
-.icons td{ 
-    height: auto;
-    width: 8.33%;
-    text-align: center;
-}
-
-.icons img{ 
-    width: 20px;
-    height: 15px;
-}
-
 h4 {
     font: 12px Arial, sans-serif;
     font-weight: bold;
@@ -1117,6 +1093,10 @@ h4 {
     font-size: 8px;
     margin: 0 0 0 0;
 }  
+.icons img {
+    width: 40px;
+    height: 35px;
+}
 
 
  @media (min-width: 769px) {
@@ -1216,10 +1196,6 @@ h4 {
 .google {
     width: 100%;
     margin: 11px 25px 0px 25px;
-}
-
-.icons td{ 
-   font: 8px;
 }
 }
 
