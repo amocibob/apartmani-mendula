@@ -162,7 +162,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .logo {
-    padding: 10px 0 0 12%;
+    padding: 0 0 0 12%;
     text-align: center;
     flex: 1 1 50%; 
     position: absolute;
@@ -170,7 +170,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .logo p {    
-    font-size: clamp(8px, 2vw, 24px);  
+    font-size: clamp(15px, 2vw, 24px);  
     color: rgba(23, 20, 20, 0.729);
     margin: 0 0 0 0;
     box-shadow: 0px 10px 10px -5px #ffffff;
@@ -188,7 +188,7 @@ h1 {
     font-weight: 900; 
     letter-spacing: 0.1rem;
     box-shadow: 0px 10px 5px -8px #ffffff; 
-    font-size: clamp(8px, 2vw, 24px);      
+    font-size: clamp(16px, 2vw, 24px);      
 }
 
 p  {
@@ -375,7 +375,7 @@ img {
     height: auto;
     font-weight: bold; 
    -webkit-text-stroke: 0.02em rgb(255, 255, 255) ;
-    font-size: clamp(8px, 1.5vw, 24px);   
+    font-size: clamp(10px, 1.2vw, 20px);   
 }   
    
 .flags a {
@@ -508,11 +508,12 @@ img {
     transform: scale(1);
 }
 
-.links {
+.linksa,
+.linksb {
     display: flex;
     flex: 1 1 14%;
     padding: 0 0 0 0;
-    margin: 0 0 0 0;      
+    margin: 8vh 0 0 0;      
 }
 
 .linksa td {
@@ -992,8 +993,6 @@ iframe {
     padding: 0 0 0px 0;
 }
 
-
-
 h4 {
     font: 16px Arial, sans-serif;
     font-weight: bold;
@@ -1101,10 +1100,6 @@ h4 {
     aspect-ratio: 3/2; 
 }  
 
-.logo p {
-    margin: 0 0 0 0;
-} 
-
 .flags {
     flex: 1 1 50%;
     padding: 0 0 0 2px;
@@ -1148,10 +1143,17 @@ h4 {
     font-weight: bold;
 }
 
-.flags td {
-    width: 30px;
+
+.flags {
+    flex: 1 1 50%;
+    padding: 0 5vw 0 2px;   
     text-align: center;
 }
+
+.flags td {
+    text-align: center;
+}
+
 
 .gallery img {
     width: 100%;
@@ -1231,6 +1233,12 @@ h4 {
 
 @media (max-width: 768px) {
 
+.flags img,
+.linksa td img,
+.linksb td img {
+    height: auto;
+    width: 4vw;   
+}   
 
 .marquee__item span {
     font-size: 8px;
@@ -1258,19 +1266,9 @@ h4 {
 } 
 }
 
-h1,
-.logo p {
-    font: 22px Arial, sans-serif;
-    font-weight: 900;     
-}
-
 @media (max-width: 550px) {
  
-h1,
-.logo p {
-    font: 16px Arial, sans-serif;
-    font-weight: 900;     
-}
+
 
 .container {
   --s: 100px; /* size of the image */
@@ -1321,11 +1319,6 @@ iframe {
 
 @media (max-width: 500px) {
 
-h1,
-.logo p {
-    font: 14px Arial, sans-serif;
-    font-weight: 900;     
-}
 
 h4 {
     font: 10px Arial, sans-serif;
