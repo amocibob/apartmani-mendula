@@ -17,6 +17,7 @@ ul {
   block-size: var(--marquee-item-height);
   overflow: hidden;
   margin: 0 0 0 0;
+     margin: 0 25px 0 27px;
 }
 
 .marquee__item {
@@ -40,10 +41,9 @@ ul {
 
 .marquee__item span {
     font-size: 10px;
-
     text-align: center;
     white-space: nowrap;
-    color: #ffffff;
+    color: #BE8B06;
     font-weight: 900;     
 }
 
@@ -128,7 +128,6 @@ ul {
   }
 }
 
-
 body { 
     font: 11px Verdana, sans-serif;
     position: relative;
@@ -163,7 +162,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .logo {
-    padding: 0 0 0 12%;
+    padding: 10px 0 0 12%;
     text-align: center;
     flex: 1 1 50%; 
     position: absolute;
@@ -171,15 +170,26 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .logo p {    
-    font: 24px Arial, sans-serif;    
-    color: rgba(5, 5, 5, 0.3);
+    font-size: clamp(8px, 2vw, 24px);  
+    color: rgba(23, 20, 20, 0.729);
     margin: 0 0 0 0;
-    box-shadow: 0px 9px 6px -6px #ffffff;
+    box-shadow: 0px 10px 10px -5px #ffffff;
     font-weight: 900;     
     letter-spacing: 0.1rem;    
     -webkit-text-stroke: 0.02em rgb(255, 255, 255); 
-    text-align: center;              
+    text-align: center; 
+    box-shadow: 0px 10px 10px -8px #ffffff;
 }  
+
+h1 {
+    color: rgba(8, 2, 2, 0.729);
+    margin: 0 0 0 0;
+    -webkit-text-stroke: 0.02em rgb(255, 255, 255);    
+    font-weight: 900; 
+    letter-spacing: 0.1rem;
+    box-shadow: 0px 10px 5px -8px #ffffff; 
+    font-size: clamp(8px, 2vw, 24px);      
+}
 
 p  {
     color: #000000;
@@ -350,7 +360,7 @@ img {
     flex: 1 1 50%;
     justify-content: flex-end;
     padding:0  10% 0 0;
-    align-items:start;
+    align-items:start; 
 }
 
 .flags table {
@@ -362,21 +372,23 @@ img {
 .flags td {
     padding:0 3% 0 0;
     margin: 0 0 0 0;
-    height: 30px;
-    font-family: 'Fantasy', serif; 
-    font-weight: 900;        
-}
-
-.flags img,
-.links img {
-    width: 35px;
-    height: 30px;
-    border-radius: 50%;
-    box-shadow: 0 6px 4px #00000073;
-}
+    height: auto;
+    font-weight: bold; 
+   -webkit-text-stroke: 0.02em rgb(255, 255, 255) ;
+    font-size: clamp(8px, 1.5vw, 24px);   
+}   
+   
+.flags a {
+    color: #000000;          
+}          
 
 .flags img {
-    border: 2px solid #BE8B06;
+    height: auto;
+    width: 3.3vw;   
+    border-radius: 50%;
+    box-shadow: 0 6px 4px #00000073;
+    aspect-ratio: 1 / 1; 
+    border: 2px solid #BE8B06;   
 }
 
 .flags td:hover,
@@ -466,7 +478,6 @@ img {
     margin: 0 0 0 0;;   
 }
 
-
 .icons img {
     width: 65px;
     height: 50px;
@@ -515,11 +526,11 @@ img {
 .linksa td img,
 .linksb td img,
 .links td img {
-    width: 30px;
-    height: 30px;
+    height: auto;
+    width: 3vw;   
     border-radius: 50%;
     box-shadow: 0 6px 4px #00000073;
-    border: 1px solid white;
+    border: 1px solid white;  
 }
 
 .ab {
@@ -584,44 +595,10 @@ img {
 
 .links2 img,
 .links img {
-    width: 25px;
-    height: 25px;
     border-radius: 50%;
     box-shadow: 0 6px 4px #00000073;
     border: 1px solid white;
 }
-
-
-.zz {
-
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-height: 100%;
-    flex-direction: bottom;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-
-}
-
-.zz img {
-
-    border-radius: 20%;
-    border: 2px solid #ffffff;  
-}
-
-
-
-h1 {
-    font: 24px Arial, sans-serif;
-    color: rgba(5, 5, 5, 0.3);
-    margin: 0 0 0 0;
-    -webkit-text-stroke: 0.02em rgb(255, 255, 255);    
-    font-weight: 900; 
-    letter-spacing: 0.1rem;  
-    box-shadow: 0px 9px 6px -6px #ffffff;      
-}
-
 
 h2 {
     font: 18px Arial, sans-serif;
@@ -1015,11 +992,7 @@ iframe {
     padding: 0 0 0px 0;
 }
 
-.logo p {      
-    letter-spacing: 0.0em;
-    margin: 0;
-    padding: 0;
-}
+
 
 h4 {
     font: 16px Arial, sans-serif;
@@ -1081,11 +1054,6 @@ h4 {
 .numbertext {
     padding: 100px 0 0 50px;
 }             
-
-.links img {
-    width:20px;
-    height: 20px;
-}
 
 .icons img {
     width: 50px;
@@ -1178,13 +1146,6 @@ h4 {
 h4 {
     font: 12px Arial, sans-serif;
     font-weight: bold;
-}
-
-.flags img,
-.linksa td img,
-.linksb td img{
-    width: 30px;
-    height: 30px;
 }
 
 .flags td {
@@ -1292,13 +1253,6 @@ h4 {
     position: absolute;
 }
 
-.flags img,
-.linksa td img,
-.linksb td img{
-    width: 20px;
-    height: 20px;
-}
-
 .wrapper {
    padding-bottom: 10px;                                             ;
 } 
@@ -1344,12 +1298,6 @@ h1,
   }
 }
 
-.flags img,
-.linksa td img,
-.linksb td img{
-    width: 20px;
-    height: 20px;
-}
 h4 {
     font: 12px Arial, sans-serif;
     font-weight: bold;
