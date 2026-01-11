@@ -179,8 +179,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 0 0 0 12%;
     text-align: center;
     flex: 1 1 50%; 
-    position: absolute;
-    margin:0;              
+    position: absolute;          
 }
 
 .logo p {    
@@ -521,12 +520,20 @@ img {
     transform: scale(1);
 }
 
+.ab {
+    width: 100%;
+    padding: 0 15px 0 5px;
+    height: fit-content;  
+        display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
 .linksa,
 .linksb {
     display: flex;
     flex: 1 1 14%;
-    padding: 0 0 0 1%;
-    margin: 8vh 0 0 0;      
+    padding: 0 0 0 1%;    
 }
 
 .linksa td {
@@ -545,16 +552,6 @@ img {
     border-radius: 50%;
     box-shadow: 0 6px 4px #00000073;
     border: 1px solid white;  
-}
-
-.ab {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    width: 100%;
-    padding: 0 15px 0 5px;
-    height: auto;
-     padding-top: 45px;    
 }
 
 .likksa {
@@ -1229,7 +1226,7 @@ h4 {
 } 
 
 .ab {
-    padding: 0 5px 0 10px;      
+    padding: 0 15px 0 20px;      
 }
 
 .linksa,
