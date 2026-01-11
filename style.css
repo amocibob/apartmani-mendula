@@ -10,11 +10,6 @@ ul {
     box-sizing: border-box;
 }
 
-.galmar {
-    background: -webkit-linear-gradient(right,  #ada996, #f2f2f2, #dbdbdb,  #eaeaea, #ffffff, #ffffff, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
-    background: linear-gradient( to right, #ada996, #f2f2f2, #dbdbdb,  #eaeaea, #ffffff, #ffffff, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
-}
-
 .marquee {
     width: 80%;
     position: relative;
@@ -26,12 +21,12 @@ ul {
 }
 
 .marquee::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  box-shadow:
-    inset 40px 0 20px -10px #eaeaea,
-    inset -40px 0 20px -10px #eaeaea;
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow:
+      inset 40px 0 20px -10px #ffffff,
+      inset -40px 0 20px -10px #ffffff;
     pointer-events: none;
 }
 
@@ -50,10 +45,12 @@ ul {
 
 .marquee__item img {
   object-fit: contain;
+  width: 40px;
+  height: 40px;
 }
 
 .marquee__item span {
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     white-space: nowrap;
     color: #BE8B06;
@@ -1004,6 +1001,14 @@ iframe {
 
 @media screen and (max-width: 1200px) {
 
+.marquee__item img {
+  object-fit: contain;
+}
+
+.marquee__item span {
+    font-size: 10px;    
+}
+
 .title {
     padding: 0 0 0px 0;
 }
@@ -1087,16 +1092,14 @@ h4 {
     position: relative;
     block-size: var(--marquee-item-height);
     overflow: hidden;
-    border-bottom: 1px solid #BE8B06;
     max-height: 70px; 
     margin-left: 4.1vw;    
 }
 
 .marquee__item span {
-    font-size: 8px;
+    font-size: 10px;
     text-align: center;
     white-space: nowrap;
-    color: #333;
     font-weight: 900;     
 }   
 
@@ -1226,7 +1229,7 @@ h4 {
 } 
 
 .ab {
-    padding: 0 15px 0 20px;      
+    padding: 0 10px 0 15px;      
 }
 
 .linksa,
@@ -1246,7 +1249,7 @@ h4 {
 .linksb td img,
 .links td img {
     height: auto;
-    width: 4vw; 
+    width: 5vw; 
     border: 1px solid;  
 }
 
@@ -1270,11 +1273,10 @@ h4 {
 @media (max-width: 768px) {
 
 .marquee__item span {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
-    color: #333;
     font-weight: 900;     
 }   
 
