@@ -10,13 +10,10 @@ ul {
 }
 
 body {
-    background: -webkit-linear-gradient(right,  #ada996, #f2f2f2, #dbdbdb,  #eaeaea, #ffffff, #ffffff, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
-    background: linear-gradient( to right, #ada996, #f2f2f2, #dbdbdb,  #eaeaea, #ffffff, #ffffff, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
     overflow-y: scroll;  
     color: #83705c;
     font: 11px Verdana, sans-serif;
     margin: 0;
-    padding: 15px 0 20px 0;
 }
 
 body::-webkit-scrollbar {
@@ -84,7 +81,6 @@ iframe {
     margin: auto;
     position: relative;
     text-align: left;
-    width: 76%;
     padding-bottom: 45px;
 }
 
