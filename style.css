@@ -718,7 +718,6 @@ li.free {
 
 .locpic {
     margin: 0 3.5vw 10px 3.5vw; 
-
 }
 
 .locpic img {
@@ -943,7 +942,7 @@ h4 {
     width: 100%;
     height: auto;
     text-align: center;
-    padding: 0 15vw 0 15vw;
+    padding: 10px 15vw 0 15vw;
 }
 
 .galleriesb {
@@ -1007,7 +1006,6 @@ h4 {
 .flag-list > li {
     width: 15%;      
 }
-
 
 .gallery img {
     width: 100%;
@@ -1097,6 +1095,28 @@ h4 {
 
 .title p {
     margin: 0 0 0 0;
+}
+
+#map {
+  height: 230px;
+  position: sticky;
+}
+
+iframe {
+    height: 230px;
+}
+.maprouter {
+    height: 230px;
+    text-align: right;
+    position: relative;  
+}
+
+.gmap_canvas {
+    height: 230px;  
+}
+
+ .gmap_iframe {
+    height:230px!important;
 }
 
 }
