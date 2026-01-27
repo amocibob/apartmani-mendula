@@ -1030,15 +1030,98 @@ h4 {
     margin: 24px 0 0 0; 
 }
 
-.backward,
-.forward {
-    font-size: 16px;
-    padding: 10px;
+h5 {
+    margin: 5px 0 0 0;
+    font-size: 8px; 
+}
+
+.calendar,
+.calendarsunset {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position:relative;
+}
+
+.month,
+.monthsunset {
+    background-color: #d3cdbd;
+    text-align: center;
+    height: 60px;
+    border: 4px solid #978966;
+}
+
+.month ul,
+.monthsunset ul {
+    list-style: none;
+    color: #000000!important;
 }
 
 .month ul li,
 .monthsunset ul li  {
-    font-size:13px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.prev,
+.next {
+    background-color: #00000019;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0px;
+    margin-top: 0px;
+    border-top: 3px solid #978966;
+    border-bottom: 3px solid #978966;
+}
+
+.prev {
+    position: absolute;
+    border-radius: 0 6px 6px 0;
+    padding: 5px 10px 5px 10px;
+    left: 0;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 6px 0 0 6px;
+    right: 0;
+    padding: 5px 10px 5px 10px;    
+}
+
+.prev a,
+.next a {
+    font-size: 20px;
+}
+
+
+.days {
+    border-left: 4px  solid #978966;
+    border-right: 4px  solid #978966;    
+    width: 100%;
+    height: 187px;
+    background-color:  #eee;
+    padding: 10px 0 0 5px;
+}
+   
+
+.days li  {
+    display: inline-block;
+    width: 13.8%;
+    text-align: center;
+    margin-bottom: 4px;
+    font-weight: bolder;
+    font-size: 10px;
+    background-color:#d9d8d8ee;
+    height: 20px;
+}
+
+
+
+.month ul li,
+.monthsunset ul li  {
+    font-size:10x;
 }
 
 .days {
@@ -1048,6 +1131,9 @@ h4 {
 .days li {
     width: 13%;
 }
+
+
+
 
 .nav {grid-template-columns: repeat(2, 1fr);  
 }
@@ -1069,6 +1155,12 @@ h4 {
 .nav,
 .locpic {
     display:none
+}
+
+.backward,
+.forward {
+    font-size: 16px;
+    padding: 10px;
 }
 
 .icons2 img,
