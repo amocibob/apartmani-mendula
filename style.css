@@ -1,9 +1,4 @@
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
 
 html, body, ul, li {
     margin: 0;
@@ -11,9 +6,10 @@ html, body, ul, li {
 }
 
 body {
+    font: 11px Verdana, sans-serif;    
     overflow-y: scroll;
-    overflow-x: hidden;
-    font: 11px Verdana, sans-serif;
+    color: #BE8B06;
+    border: #BE8B06;       
 }
 
 ul {
@@ -26,15 +22,10 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    border: 3.5px solid #978966;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-    background: #978966;
+    border: 3.5px solid;
 }
 
 a {
-    color: white;
     text-decoration: none;
 }
 
@@ -43,25 +34,17 @@ img {
     height: auto;
 }
 
-.slide,
-.calendar,
-.calendarsunset,
-table,
-iframe {
-    box-shadow: 0 5px 5px  #978966;
-}
-
 .wrapperhome,
 .wrappersunrise,
 .wrappersunset,
 .wrappersurroundings,
 .wrapperpula,
 .wrapperlocation {
-    background: #fff;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     position: relative;
+    margin: 0 3.5 0 3.5;
 }
 
 .wrappersurroundings,
@@ -83,81 +66,57 @@ iframe {
 .right,
 .right-section {
     flex: 1 1 60%;
-    padding: 10px 3.5vw 0 0;
+    margin-right: 3.5vw;
 }
 
 .logo {
-    color: #BE8B06;
     padding: 0 2vw 0 3.5vw;
     text-align: center;
     width: 30vw;
 }
 
 .logo p {
-    border-bottom: 1px solid #C4AE7C;
+    border-bottom: 1px solid;
     font-weight: bold;
     padding: 1px; 
     letter-spacing: 0.2em;
     margin-top: 0;
-    margin-bottom: 0;
 }
 
 .title {
     font: 22px Arial, sans-serif;
     text-align: center;
     font-family:'Cinzel', serif; 
-    padding: 0 3.5vw 0 3.5vw;       
+    padding: 0 2.5vw 0 3.5vw;       
 }
 
 .title p {
-    border-bottom: 1px solid #C4AE7C;
+    border-bottom: 1px solid;
     margin: 0 15px 0 0;
     padding: 1px;
-    color:  #BE8B06;  
-}
+} 
 
 .surroundingsp p,
 .pulap p {
     padding: 10px 0 0 0;
 }
 
-.links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.nav {
-    flex: 11 30%;
-    padding: 15px 0 0 3.5vw;
-    margin: 0 0 0 0;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);  
-    gap: 1.4vw;
-}
-
 .textlefthome {
-    flex: 1 1 70%;
+    text-align: center;
 }
 
 .textlefthome img {
-    border: none;
-    box-shadow: none;
-    padding: 20vh 0 0 0;
+    padding: 10vh 3.5vw 0 0;
     width: 15vw;
-
 }
 
-.textleft {
-    width: 95%;
-    color: #BE8B06;
+.textleft  p{
     padding: 0 3.5vw 0 3.5vw; 
 }
 
 .flags {
     text-align: center;
-    padding: 5px 0 0 2vw;
+    padding: 5px 0 0 3.5vw;
 }
 
 .flag-list > li {
@@ -177,35 +136,25 @@ iframe {
 }
 
 .flag-list img {
-    width: 3vw;
-    height: 2vw;
-    border-radius: 50%;
-    box-shadow: none;
-    margin: 0 0 0 0;
+    width: 4.5vw;
+    height: 3.5vw;
+    border-radius: 50%; 
 }
 
 .flag-list img:hover {
-    border-radius: 50%;
     transform: scale(1.6);  
-}
-
-.nav img {
-    width: 3vw;
-    border-radius: 50%;
-    border: 2px solid #C4AE7C; 
 }
 
 .icons2 img,
 .totop img {
     border-radius: 50%;
-    border: 2px solid #C4AE7C;
+    border: 2px solid #ca8f06;
     width: 30px; 
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.45);    
 }
 
-.nav img:hover,
 .icons2 img:hover,
 .totop img:hover {
-    border: 2px solid #978966;
     box-shadow: 0 0 10px #FEAD15;
     transition: transform 0.3s ease;
     transform: scale(1.34);      
@@ -217,14 +166,14 @@ iframe {
 
 .swiper-container {
     width: 100%;
-    margin: 20px 0 0 0; 
+    margin: 25px 0 0 0; 
     overflow: hidden; 
     position: relative;                 
 }
 
 .swiper-container:hover {
     transition: transform 0.9s ease;
-    transform: scale(1.11);
+    transform: scale(1.09);
 }
 
 .swiper-container img {
@@ -267,14 +216,13 @@ iframe {
     font-size: clamp(10px, 1.5vw, 10px);
     font-weight: 700;    
     font-family: 'Fantasy', serif;   
-    color:#BE8B06; 
 }
 
 .icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 12px;
-    padding: 5px 3.5vw 0 3.5vw;     
+    padding: 10px 3.5vw 0 3.5vw;     
 }
 
 .icons > div {
@@ -295,7 +243,6 @@ iframe {
     font-size: 10px;
     font-weight: 700;
     font-family: 'Fantasy'; 
-    color: #BE8B06;
 }
 
 h1 {
@@ -307,8 +254,7 @@ h1 {
 h2 {
     text-align: center;
     font: 24px Arial, sans-serif;
-    color: #BE8B06;
-    border-bottom: 1px solid #C4AE7C;
+    border-bottom: 1px solid;
     margin: 0;
     font-family: 'Fantasy', serif;
     padding: 0 15% 0 15%; 
@@ -317,18 +263,15 @@ h2 {
 h3 {
     margin: 0;
     font: 18px arial, sans-serif;
-    color: #BE8B06;
-    border-bottom: 1px solid #C4AE7C;
     padding-top: 8px;
     margin-bottom: 1em;
     text-align: center;
     font-family: 'Fantasy', serif;
 }
 
- h4 {
+h4 {
     font: 14px arial, sans-serif;  
-    color: #BE8B06;
-    border-bottom: 1px solid #C4AE7C;
+    border-bottom: 1px solid;
     margin: 0 15px 0 0;    
     text-align: center;
     font-family: 'Fantasy', serif;
@@ -354,7 +297,7 @@ h3 {
 
 .welcome {
     margin-bottom:20px;
-    color: #BE8B06;   
+    padding-left: 1.5vw;   
 }
 
 .pricelist {
@@ -368,10 +311,9 @@ table {
 }
 
 th, td {
-    border: 1px solid #C4AE7C;
+    border: 1px solid;
     text-align: center;
     font-weight: bold;
-    color: #000;
 }
 
 th {
@@ -381,31 +323,35 @@ th {
 td {
     background: #eee;
 }
- 
-li {
-    color: #BE8B06;
-}
 
 .calendar,
 .calendarsunset {
     width: 100%;
-    height: 350px;
+    height: 59vh;
     overflow: hidden;
     position:relative;
+    margin: 20px 0 0 0;
+    border: 2px solid;
 }
+
+h5 {
+    margin: 0;
+    padding: 20px 0 0 0;
+    font-size: 14px;
+}  
 
 .month,
 .monthsunset {
     background-color: #d3cdbd;
     text-align: center;
-    height: 120px;
-    border: 4px solid #978966;
+    height: 15vh;
+    border-bottom: 2px solid;
+    Margin: 0 0 0 0;
 }
 
 .month ul,
 .monthsunset ul {
     list-style: none;
-    color: #000000!important;
 }
 
 .month ul li,
@@ -419,79 +365,73 @@ li {
 .next {
     background-color: #00000019;
     font-weight: bold;
-    font-size: 20px;
-    padding: 16px;
-    margin-top: 12px;
-    border-top: 3px solid #978966;
-    border-bottom: 3px solid #978966;
+    margin-top: 10px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
 }
 
 .prev {
     position: absolute;
+    left: 0;
     border-radius: 0 6px 6px 0;
     padding: 5px 10px 5px 10px;
-    left: 0;
+}
+
+.prev a,
+.next a {
+    font-size: 25px;
+    color: #ffffff;    
 }
 
 .next {
     position: absolute;
     right: 0;
     border-radius: 6px 0 0 6px;
-    right: 0;
-    padding: 5px 10px 5px 10px;    
-}
-
-.prev a,
-.next a {
-    font-size: 26px;
+    padding: 5px 10px 5px 10px;
 }
 
 .prev:hover,
 .next:hover {
-    background-color: #0000004D;
-    box-shadow: 0 0 5px #FEAD15;
+    background-color:#0000004D;
 }
 
-.days {
-    border-left: 4px  solid #978966;
-    border-right: 4px  solid #978966;    
+.days {    
     width: 100%;
-    height: 227px;
+    height: 50vh;
     background-color:  #eee;
-    padding: 10px 0 0 5px;
+    margin: 0 0 0 0;
+    padding: 10px 0 0 1vw;
+    text-align: left;
 }
-   
+  
 .days li  {
     display: inline-block;
-    width: 13.8%;
+    width: 8.8vw;
     text-align: center;
     margin-bottom: 4px;
     font-weight: bolder;
     font-size: 11px;
     background-color:#d9d8d8ee;
-    height: 25px;
+    height: 4.2vh;
+        color: #000000;
+
 }
 
 li.act {
     background-color: #FF5F1F;
-    color: #5b4204;
-    border-color: #986f08;
     padding-top: 3px;
+    border: 1px solid;
 }
 
 li.odl {
     background: linear-gradient(to right,  #FF5F1F  35%,#ccb587 50%);
     border: 1px solid;
-    color: #5b4204;
-    border-color: #986f08;
     padding-top: 3px;
 }
 
 li.dol {
     background: linear-gradient(to right,#ccb587 50%, #FF5F1F 66%);
     border: 1px solid; 
-    color: #5b4204;
-    border-color: #986f08;
     padding-top: 3px;
 }
 
@@ -499,22 +439,20 @@ li.empty {
     background-color: #eee;
     color: #eee;
     padding-top: 3px;
+    border: 1px solid;
 }
 
 li.day {
     border: 1px solid;
     padding-top: 3px;
-    color: #7c5a05;
     margin-bottom: 10px;
-    border-color: #986f08;
+    background-color:#d9d8d8ee;
     background-color: #d3ad62;
 }
 
 li.free {
-    border: 1px solid;
-    color: #986f08;
-    border-color: #986f08;
-    background-color: #ccb587;
+    border: 1px solid  #000000;
+    background-color: #eddcb9;
     padding-top: 3px;
 }
 
@@ -530,7 +468,7 @@ li.free {
 .galleriesb {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 10px;
+    column-gap: 10px;
     width: 100%;
     margin: 10px 3.5vw 0 3.5vw;    
 }
@@ -561,11 +499,12 @@ li.free {
 
 .slide {      
     width: 22vw;
-    margin-bottom: 20px;     
+    margin-bottom: 15px; 
 }
 
 .slideb {      
     width: 22vw;
+    margin-bottom: 20px;        
 }
 
 .slideb>div,
@@ -664,7 +603,7 @@ li.free {
     transform: translateY(-50%);
     color: white;
     z-index: 10;
-    width: 80px;
+    width: 30px;
     padding: 8px 30px 8px 30px;
     margin: -50px 0 0 0;
     font-size: 35px;
@@ -754,8 +693,8 @@ li.free {
     padding: 0.1em 0;
     font-family: 'Fantasy', serif;   
     font-size: 14px;
-    color:#BE8B06;
     margin: 5px 0 5px 0;
+    color: #BE8B06;
 }
 
 .linkovi::after {
@@ -814,7 +753,6 @@ li.free {
 
 .maps p {
     padding-top: 10px;
-    color: #BE8B06;
 }
 
 .totop {
@@ -826,7 +764,7 @@ li.free {
 #map {
   width: 100%;
   height: 355px;
-  border: 2px solid #C4AE7C;
+  border: 1px solid;
   margin-top: 18px;
   position: sticky;
 }
@@ -892,9 +830,19 @@ h4 {
     font-weight: bold;
 }
 
+.days li  {
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+    margin-bottom: 4px;
+    font-weight: bolder;
+    font-size: 11px;
+    height: 4.2vh;
+}
+
 .swiper-container:hover {
     transition: transform 0.9s ease;
-    transform: scale(1.11);
+    transform: scale(1.09);
 }
 }
 
@@ -904,45 +852,63 @@ h4 {
 .wrapperpula,
 .wrapperlocation,   
 .wrappersunset,
-.wrappersunrise {   
+.wrappersunrise,
+.wrapperhome {   
     padding: 0 0 0 0;
 }   
 
 .left-section,
-.left-sectionl,
-.right {
+.left-sectionl {
     flex: 1 1 100%;
     width: 100vw;
+    padding: 0 3.5vw 0 0;             
+}
+
+.left-sectionlogo {
+    flex: 1 1 90%;
+    width: 90vw;
     padding: 0 3.5vw 0 4vw;             
 }
 
+.logo {
+    width: 90vw;
+    padding: 0;
+    margin:0;
+}
+
 .logo p {
-    border-top: 1px solid #C4AE7C;
-    width: 100%;
-    padding: 0 0 0 0;
+    margin-bottom: 0;
 }
 
 .title {
-    padding: 0 0 0 0;
+    font-size: 22px;
+    font-family:'Cinzel', serif; 
+    padding: 0 0 0 3.5vw; 
+    margin: 0 0 0 0;      
 }
 
-.right-section {
+.title p{
+
+    padding: 0 0 0 0; 
+    margin: 0 0 0 0;      
+}
+
+
+.homepic {
+    margin: 0 0 0 3.5vw;
+}
+
+.right {
     padding: 0 3.5vw 0 4vw;    
     margin: 0 0 0 0;
-    flex: 1 1 56%;
+    flex: 1 1 100%;
+    width: 100%;
 }
 
 .textleft {
     width: 100%;
-    color: #BE8B06;
-    padding: 0 0px 0 0px; 
-}
-
-.logo {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding: 10px 15vw 0 15vw;
+    padding: 0 0 0 3px; 
+    margin: 0 0 0 0;    
 }
 
 .galleriesb {
@@ -958,6 +924,7 @@ h4 {
     width: 100%;
     height: auto;        
     aspect-ratio: 3/2;
+    margin-bottom: 10px;
 }
 
 .slideb:hover {
@@ -966,27 +933,16 @@ h4 {
 
 .swiper-container:hover {
     transition: transform 0.9s ease;
-    transform: scale(1.08);
+    transform: scale(1.07);
 }
 
 .textlefthome  {
-   text-align: center;
    width: 100%;
 }
 
 .textlefthome img {
-    border: none;
-    box-shadow: none;
     padding: 10px 0 0 0;
-    margin: 0 0 0 0;
     width: 6vw;
-}
-
-.icons2 {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    margin: 20px 3.5vw 10px 3.5vw; 
-    row-gap: 10px;   
 }
 
 .pricelist {
@@ -995,7 +951,12 @@ h4 {
 }
 
 .flags {
-    padding-top: 0;
+    padding: 0 0 0 3.5vw;
+}
+
+.flag-list {
+   width: 95%; 
+   padding: 0 0 0 7vw;
 }
 
 .flag-list img {
@@ -1012,14 +973,12 @@ h4 {
 }
 
 h1 {
-    font: 18px Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-size: 18px;
 }
 
 h2 {
     font: 18px ;
-    padding: 0 3.5vw 0 3.5vw; 
+    margin: 0 0 0 3.5vw; 
 }
 
 h3 {
@@ -1027,132 +986,57 @@ h3 {
 }
 
 h4 {
-    margin: 24px 0 0 0; 
+    margin: 24px 0 0 3.5vw; 
 }
 
 h5 {
-    margin: 5px 0 0 0;
-    font-size: 8px; 
+    padding: 5px 0 0 0;
+    font-size: 10px; 
 }
 
 .calendar,
 .calendarsunset {
     width: 100%;
-    height: 250px;
-    overflow: hidden;
-    position:relative;
+    height: 45vh;
 }
 
 .month,
 .monthsunset {
-    background-color: #d3cdbd;
-    text-align: center;
-    height: 60px;
-    border: 4px solid #978966;
+   height: 10vh;
 }
 
 .month ul,
 .monthsunset ul {
-    list-style: none;
-    color: #000000!important;
-}
 
-.month ul li,
-.monthsunset ul li  {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-.prev,
-.next {
-    background-color: #00000019;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 0px;
-    margin-top: 0px;
-    border-top: 3px solid #978966;
-    border-bottom: 3px solid #978966;
-}
-
-.prev {
-    position: absolute;
-    border-radius: 0 6px 6px 0;
-    padding: 5px 10px 5px 10px;
-    left: 0;
-}
-
-.next {
-    position: absolute;
-    right: 0;
-    border-radius: 6px 0 0 6px;
-    right: 0;
-    padding: 5px 10px 5px 10px;    
+    margin:0;
 }
 
 .prev a,
 .next a {
-    font-size: 20px;
+    font-size: 15px;
 }
 
-
-.days {
-    border-left: 4px  solid #978966;
-    border-right: 4px  solid #978966;    
+.days {   
     width: 100%;
-    height: 187px;
-    background-color:  #eee;
-    padding: 10px 0 0 5px;
 }
    
-
 .days li  {
-    display: inline-block;
-    width: 13.8%;
-    text-align: center;
-    margin-bottom: 4px;
-    font-weight: bolder;
     font-size: 10px;
-    background-color:#d9d8d8ee;
-    height: 20px;
-}
-
-
-
-.month ul li,
-.monthsunset ul li  {
-    font-size:10x;
-}
-
-.days {
-    padding :10px  10px 0 10px;
-}
-
-.days li {
+    height: 3vh;
     width: 13%;
-}
-
-
-
-
-.nav {grid-template-columns: repeat(2, 1fr);  
 }
 
 .icons {
     grid-template-columns: repeat(4, 1fr);
-    padding: 5px 0 0 0; 
+    padding: 5px 0 0 3.5vw; 
     column-gap: 8px;       
 }
 
 .icons span {
-    font-size: 8px;
-    font-weight: 700;
-    font-family: 'Fantasy'; 
-    color: #BE8B06;
+    font-size: 10px;
 }
 
 .galleries,
-.nav,
 .locpic {
     display:none
 }
@@ -1163,30 +1047,8 @@ h5 {
     padding: 10px;
 }
 
-.icons2 img,
-.totop img {
-    border-radius: 50%;
-    border: 2px solid #C4AE7C;
-    width: 30px; 
-}
-
-.calendar,
-.calendarsunset {
-    margin: 20px 0 0 0;
-   box-shadow: none;
-}
-
-.homepic img {
-   text-align:center;
-   border: none;
-}
-   
 .star {
     padding: 10px  0 5px 0;;
-}
-
-.title p {
-    margin: 0 0 0 0;
 }
 
 #map {
@@ -1197,6 +1059,7 @@ h5 {
 iframe {
     height: 230px;
 }
+
 .maprouter {
     height: 230px;
     text-align: right;
@@ -1209,6 +1072,11 @@ iframe {
 
  .gmap_iframe {
     height:230px!important;
+}
+
+.welcome {
+    margin-bottom:20px;
+    padding-left: 0;   
 }
 
 }
@@ -1224,15 +1092,8 @@ iframe {
     pointer-events: auto;
   }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
 
-.contact-grid img {
-    width: 7vw;
-}    
-
-.nav {
-    display: none;
-}
 
 .icons2 {grid-template-columns: repeat(3, 1fr);  
 }
@@ -1242,58 +1103,31 @@ iframe {
     display: none;
  }
 
- .numbertext {
-    color: #ffffff;
-    font-size: 18px;
+.numbertext {
     padding: 30px 0 0 45px;
-    position: absolute;
-}
-
-.gallery img {
-    width: 100%;
-}
-
-.backward,
-.forward {
-    font-size: 16px;
-    padding: 10px;
-}
-
-.month ul li,
-.monthsunset ul li  {
-    font-size:13px;
-}
-
-.days {
-    padding :10px  10px 0 10px;
-}
-
-.days li {
-    width: 13%;
-}
-
-.textlefthome {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-}
-
-.textlefthome  img{
-    padding: 10px 0 0 0;
-}
-
-.homepic {
-   text-align:center;
-}
-
-.star {
-    padding-top: 5%;
 }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 450px) {
 
-.gallery{
+.gallery {
     display: none;
+}
+
+.calendar,
+.calendarsunset {
+    height: 41vh;
+}
+
+h5 {
+   font-size: 8px;
+   padding-top: 10px;
+}
+
+.days li  {
+    font-size: 10px;
+    height: 2.5vh;
+    width: 12.1%;
 }
 }
  
