@@ -8,6 +8,7 @@ html, body, ul, li {
 body {
     font: 11px Verdana, sans-serif;    
     overflow-y: scroll;
+    overflow-x: hidden;
     color: #BE8B06;
     border: #BE8B06;       
 }
@@ -222,7 +223,7 @@ img {
 .icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 12px;
+    column-gap: 6px;
     padding: 10px 3.5vw 0 3.5vw;     
 }
 
@@ -236,7 +237,6 @@ img {
 
 .icons img {
     height: clamp(30px, 5vw, 50px);
-    box-shadow: none;
         padding: 5px 0 0px 0;   
 }
 
@@ -873,7 +873,7 @@ h4 {
 
 .logo {
     width: 90vw;
-    padding: 0;
+    padding-top: 10px;
     margin:0;
 }
 
@@ -893,7 +893,6 @@ h4 {
     padding: 0 0 0 0; 
     margin: 0 0 0 0;      
 }
-
 
 .homepic {
     margin: 0 0 0 3.5vw;
@@ -1008,7 +1007,6 @@ h5 {
 
 .month ul,
 .monthsunset ul {
-
     margin:0;
 }
 
@@ -1033,12 +1031,9 @@ h5 {
     column-gap: 8px;       
 }
 
-.icons span {
-    font-size: 10px;
-}
-
 .galleries,
-.locpic {
+.locpic,
+h7 {
     display:none
 }
 
@@ -1047,6 +1042,10 @@ h5 {
     font-size: 16px;
     padding: 10px;
 }
+
+.pricelist {
+    padding-bottom: 5px;
+  }
 
 .star {
     padding: 10px  0 5px 0;;
@@ -1064,22 +1063,32 @@ iframe {
 .maprouter {
     height: 230px;
     text-align: right;
-    position: relative;  
+    position: relative;
 }
 
 .gmap_canvas {
-    height: 230px;  
+    height: 230px; 
+    margin-top: 5px;  
 }
 
  .gmap_iframe {
     height:230px!important;
 }
 
+.numbertext {
+    padding: 20px 0 0 20px;
+}
+
+.totop {
+   width: 100%;
+   text-align: center;
+   padding: 0 0 10px 0;
+}
+
 .welcome {
     margin-bottom:20px;
     padding-left: 0;   
 }
-
 }
 
  @media (min-width: 768px) {
@@ -1095,17 +1104,63 @@ iframe {
 
 @media (max-width: 768px) { 
 
-
-.icons2 {grid-template-columns: repeat(3, 1fr);  
-}
+.icons2 {
+    grid-template-columns: repeat(3, 1fr); 
+    padding-top: 10px;  
 
 .forward,
 .backward {
     display: none;
- }
+}
+}
 
-.numbertext {
-    padding: 30px 0 0 45px;
+.icons {
+    column-gap: 0;  
+}
+
+.icons img {
+    height:30px;
+    padding: 5px 0 0px 0;   
+}
+
+.icons2 span {
+    padding-bottom: 8px;
+}
+
+h5 {
+   font-size: 8px;
+   padding-top: 12px;
+}
+
+.calendar,
+.calendarsunset {
+    width: 100%;
+    height: 215px;
+}
+
+.month,
+.monthsunset {
+   height: 50px;
+}
+
+.month ul,
+.monthsunset ul {
+    margin:0;
+}
+
+.prev a,
+.next a {
+    font-size: 15px;
+}
+
+.days {   
+    width: 100%;
+}
+   
+.days li  {
+    font-size: 10px;
+    height: 13px;
+    width: 12.8%;
 }
 }
 
@@ -1115,21 +1170,10 @@ iframe {
     display: none;
 }
 
-.calendar,
-.calendarsunset {
-    height: 41vh;
-}
-
-h5 {
-   font-size: 8px;
-   padding-top: 10px;
-}
-
 .days li  {
-    font-size: 10px;
-    height: 2.5vh;
-    width: 12.1%;
+    width: 12.3%;
 }
+
 }
  
 
