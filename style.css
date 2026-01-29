@@ -1091,7 +1091,7 @@ iframe {
 }
 }
 
- @media (min-width: 768px) {
+  @media (min-width: 768px) {
   .mySwiper,
   .mySwiper * {
     cursor: auto !important;
@@ -1104,16 +1104,15 @@ iframe {
 
 @media (max-width: 768px) { 
 
-.icons2 {
-    grid-template-columns: repeat(3, 1fr); 
-    padding-top: 10px;  
+
+.icons2 {grid-template-columns: repeat(3, 1fr);  
+}
 
 .forward,
 .backward {
     display: none;
-}
-}
-
+ }
+ 
 .icons {
     column-gap: 0;  
 }
