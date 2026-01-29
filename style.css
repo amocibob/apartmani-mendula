@@ -89,12 +89,12 @@ img {
     font: 22px Arial, sans-serif;
     text-align: center;
     font-family:'Cinzel', serif; 
-    padding: 0 2.5vw 0 3.5vw;       
+    padding: 0 3.5vw 0 3.5vw;       
 }
 
 .title p {
     border-bottom: 1px solid;
-    margin: 0 15px 0 0;
+    margin: 0 0 0 0;
     padding: 1px;
 } 
 
@@ -286,7 +286,6 @@ h4 {
     gap: 25px;
     width: 100%;
     margin: 0 0 0 0; 
-    padding: 22px 0 10px 0;
 }
 
 .star img  {
@@ -340,6 +339,11 @@ h5 {
     padding: 20px 0 0 0;
     font-size: 14px;
 }  
+
+h7 {
+    color: #ffffff;
+}  
+
 
 .month,
 .monthsunset {
@@ -884,12 +888,11 @@ h4 {
 .title {
     font-size: 22px;
     font-family:'Cinzel', serif; 
-    padding: 0 0 0 3.5vw; 
+    padding: 0 0 0 0; 
     margin: 0 0 0 0;      
 }
 
 .title p{
-
     padding: 0 0 0 0; 
     margin: 0 0 0 0;      
 }
@@ -982,16 +985,17 @@ h2 {
 }
 
 h3 {
-    padding-top: 15px; 
+    padding: 15px 0 0 0;
+    margin-bottom: 10px; 
 }
 
 h4 {
-    margin: 24px 0 0 3.5vw; 
+    margin: 15px 0 0 3.5vw; 
 }
 
 h5 {
     padding: 5px 0 0 0;
-    font-size: 10px; 
+    font-size: 5px; 
 }
 
 .calendar,
@@ -1089,6 +1093,11 @@ iframe {
     margin-bottom:20px;
     padding-left: 0;   
 }
+
+.homepic {
+    padding-bottom: 5px;
+}
+
 }
 
   @media (min-width: 768px) {
