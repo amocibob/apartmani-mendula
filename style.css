@@ -316,6 +316,10 @@ td {
     background: #eee;
 }
 
+.pricelist {
+    font-size: 1.3vw;
+}
+
 .calendar,
 .calendarsunset {
     height: 59vh;
@@ -910,7 +914,7 @@ h5 {
 
 .pricelist {
     padding-bottom: 5px;
-  }
+}
 
 .star {
     padding: 10px  0 5px 0;;
