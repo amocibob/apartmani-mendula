@@ -2493,74 +2493,106 @@ https://unpkg.com/swiper@11.2.10/swiper-bundle.css">
   <div class="totop">
     <a href="#top"><img src="gifovi/backtotop.jpg"  alt="Back to top" title="Torna su"></a>
   </div>      
-<script src="https://unpkg.com/swiper@11.2.10/swiper-bundle.js"></script>
-<script>
-  let swiper;
-  const mq = window.matchMedia("(max-width: 768px)");
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Initialize Leaflet script
+      const leafletScript = document.createElement("script");
+      leafletScript.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+      leafletScript.defer = true;
+      document.body.appendChild(leafletScript);
 
-  function fixDesktopCursor() {
-    if (mq.matches) return;
+      leafletScript.onload = function() {
+        // Initialize the map after Leaflet is loaded
+        const lat = 44.897149;
+        const lng = 13.843393;
 
-    const wrapper = document.querySelector(".mySwiper .swiper-wrapper");
-    if (wrapper) {
-      wrapper.style.cursor = "default";   
-    }
-  }
+        const map = L.map('map').setView([lat, lng], 15);
 
-  function initSwiper(isMobile) {
-    if (swiper) swiper.destroy(true, true);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
 
-    swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      slidesPerView: "auto",
-      loop: true,
-      centeredSlides: isMobile,
+        L.marker([lat, lng])
+          .addTo(map)
+          .bindPopup('<strong>Appartamenti Mendula</strong><br>via Bunarska cesta 13<br>Pola, Croatia')
+          .openPopup();
+      };
 
-      grabCursor: isMobile,
-      allowTouchMove: isMobile,
-      simulateTouch: isMobile,
+      // Initialize Swiper script
+      const swiperScript = document.createElement("script");
+      swiperScript.src = "https://unpkg.com/swiper@11.2.10/swiper-bundle.js";
+      swiperScript.defer = true;
+      document.body.appendChild(swiperScript);
 
-      navigation: {
-        nextEl: ".backward",
-        prevEl: ".forward",
-      },
+      swiperScript.onload = function() {
+        // Initialize Swiper after it's loaded
+        let swiper;
+        const mq = window.matchMedia("(max-width: 768px)");
 
-      keyboard: {
-        enabled: !isMobile,
-      },
-
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 0,
-        modifier: 1,
-      },
-
-      on: {
-        init() {
-          fixDesktopCursor();
-        },
-        transitionEnd() {
-          fixDesktopCursor(); 
-        },
-        click(swiper) {
-          if (!mq.matches && swiper.clickedIndex !== undefined) {
-            swiper.slideToLoop(swiper.clickedIndex);
+        function fixDesktopCursor() {
+          if (mq.matches) return;
+          const wrapper = document.querySelector(".mySwiper .swiper-wrapper");
+          if (wrapper) {
+            wrapper.style.cursor = "default";   
           }
-        },
-      },
+        }
+
+        function initSwiper(isMobile) {
+          if (swiper) swiper.destroy(true, true);
+
+          swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            slidesPerView: "auto",
+            loop: true,
+            centeredSlides: isMobile,
+
+            grabCursor: isMobile,
+            allowTouchMove: isMobile,
+            simulateTouch: isMobile,
+
+            navigation: {
+              nextEl: ".backward",
+              prevEl: ".forward",
+            },
+
+            keyboard: {
+              enabled: !isMobile,
+            },
+
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 0,
+              modifier: 1,
+            },
+
+            on: {
+              init() {
+                fixDesktopCursor();
+              },
+              transitionEnd() {
+                fixDesktopCursor(); 
+              },
+              click(swiper) {
+                if (!mq.matches && swiper.clickedIndex !== undefined) {
+                  swiper.slideToLoop(swiper.clickedIndex);
+                }
+              },
+            },
+          });
+        }
+
+        // Initialize Swiper based on screen size
+        initSwiper(mq.matches);
+
+        // Reinitialize Swiper if the screen size changes
+        mq.addEventListener("change", e => {
+          initSwiper(e.matches);
+        });
+      };
     });
-  }
-
-  document.addEventListener("DOMContentLoaded", () => {
-    initSwiper(mq.matches);
-  });
-
-  mq.addEventListener("change", e => {
-    initSwiper(e.matches);
-  });
-</script>    
-<script>
+  </script>
+  <script>
 
   window.addEventListener("load", () => {
       for (let i of document.querySelectorAll(".gallery > img")) {
@@ -2606,28 +2638,6 @@ https://unpkg.com/swiper@11.2.10/swiper-bundle.css">
       showSlide(slideIndex); // Initialize
     });
   });
-</script>
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
-</script>
-<script>
-
-  const lat = 44.897149;
-  const lng = 13.843393;
-
-
-  const map = L.map('map').setView([lat, lng], 15);
-
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
-
-
-  L.marker([lat, lng])
-    .addTo(map)
-    .bindPopup('<strong>Appartamenti Mendula</strong><br> via Bunarska cesta 13<br>Pola, Croatia')
-    .openPopup();
-</script>
+</script>  
 </body>
 </html>
