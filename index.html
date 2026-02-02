@@ -2186,7 +2186,7 @@ https://unpkg.com/swiper@11.2.10/swiper-bundle.css" defer>
         <div style="background-image:url(thumbs/sset041.jpg)" aria-hidden="true"></div>
       </div></a>         
       </div>
-      <div class="facebook"><a href="http://www.facebook.com/ApartmanMendula/" target="_blank" rel="noopener noreferrer"><img src="gifovi/facebook.jpg" alt="Facebook" title="Facebook.com ApartmanMendula"></a><span>ApartmanMendula</span></div>                              
+      <div class="facebook"><a href="http://www.facebook.com/ApartmanMendula/" target="_blank" rel="noopener noreferrer"><img src="gifovi/facebook.jpg" alt="Facebook" title="Facebook.com ApartmanMendula" loading="lazy"></a><span>ApartmanMendula</span></div>                              
     </div>       
     <div class="right">
       <div class="swiper-container mySwiper"> 
@@ -2424,7 +2424,7 @@ https://unpkg.com/swiper@11.2.10/swiper-bundle.css" defer>
         <p>Okruženi smokvama, maslinama i mediteranskim zelenilom, Apartmani Mendula nude spokojno okruženje za potpuni bezbrižan i opuštajući odmor.</p> 
         <p>Uz prethodnu najavu, rado primamo i vašeg psa, pod uvjetom da svojim ponašanjem ne ometa ostale goste.</p>
          <p>Gostima su osigurani posteljina i set ručnika po osobi, uz mogućnost zamjene prema potrebi, kao i osnovni higijenski pribor.</p>
-        <p>Wi-Fi je dostupan u apartmanima i dvorištu, a TV nudi hrvatske zemaljske programe te širok izbor međunarodnih satelitskih kanala. U dvorištu su često dostupni i bicikli koje možete koristiti besplatno.</p> 
+        <p>Wi-Fi je dostupan u apartmanima i dvorištu, a TV nudi zemaljske programe te izbor satelitskih kanala. U dvorištu su često dostupni i bicikli koje možete koristiti besplatno.</p> 
         <p>Gosti mogu ući u apartman od 14 sati ili po dogovoru, dok je odlazak predviđen za 10 sati ili po dogovoru.</p>        
         <p>Domaćin će vas osobno dočekati, pomoći pri smještaju i pružiti sve potrebne informacije o boravku, obližnjim sadržajima i lokalnim doživljajima – osiguravajući toplu, obiteljsku atmosferu tijekom vašeg posjeta.<p>
         <p>Kontaktirajte nas vašu za rezervaciju.</p>                
@@ -2449,151 +2449,6 @@ https://unpkg.com/swiper@11.2.10/swiper-bundle.css" defer>
   <div class="totop">
     <a href="#top"><img src="gifovi/backtotop.jpg"  alt="Back to top" title="povratak na vrh" loading="lazy"></a>
   </div>      
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Initialize Leaflet script
-      const leafletScript = document.createElement("script");
-      leafletScript.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
-      leafletScript.defer = true;
-      document.body.appendChild(leafletScript);
-
-      leafletScript.onload = function() {
-        // Initialize the map after Leaflet is loaded
-        const lat = 44.897149;
-        const lng = 13.843393;
-
-        const map = L.map('map').setView([lat, lng], 15);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
-
-        L.marker([lat, lng])
-          .addTo(map)
-          .bindPopup('<strong>Apartmani Mendula</strong><br>Bunarska cesta 13<br>Pula, Hrvatska')
-          .openPopup();
-      };
-
-      // Initialize Swiper script
-      const swiperScript = document.createElement("script");
-      swiperScript.src = "https://unpkg.com/swiper@11.2.10/swiper-bundle.js";
-      swiperScript.defer = true;
-      document.body.appendChild(swiperScript);
-
-      swiperScript.onload = function() {
-        // Initialize Swiper after it's loaded
-        let swiper;
-        const mq = window.matchMedia("(max-width: 768px)");
-
-        function fixDesktopCursor() {
-          if (mq.matches) return;
-          const wrapper = document.querySelector(".mySwiper .swiper-wrapper");
-          if (wrapper) {
-            wrapper.style.cursor = "default";   
-          }
-        }
-
-        function initSwiper(isMobile) {
-          if (swiper) swiper.destroy(true, true);
-
-          swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            slidesPerView: "auto",
-            loop: true,
-            centeredSlides: isMobile,
-
-            grabCursor: isMobile,
-            allowTouchMove: isMobile,
-            simulateTouch: isMobile,
-
-            navigation: {
-              nextEl: ".backward",
-              prevEl: ".forward",
-            },
-
-            keyboard: {
-              enabled: !isMobile,
-            },
-
-            coverflowEffect: {
-              rotate: 0,
-              stretch: 0,
-              depth: 0,
-              modifier: 1,
-            },
-
-            on: {
-              init() {
-                fixDesktopCursor();
-              },
-              transitionEnd() {
-                fixDesktopCursor(); 
-              },
-              click(swiper) {
-                if (!mq.matches && swiper.clickedIndex !== undefined) {
-                  swiper.slideToLoop(swiper.clickedIndex);
-                }
-              },
-            },
-          });
-        }
-
-        // Initialize Swiper based on screen size
-        initSwiper(mq.matches);
-
-        // Reinitialize Swiper if the screen size changes
-        mq.addEventListener("change", e => {
-          initSwiper(e.matches);
-        });
-      };
-    });
-  </script>
-  <script>
-
-  window.addEventListener("load", () => {
-      for (let i of document.querySelectorAll(".gallery > img")) {
-        i.addEventListener("click", () => i.classList.toggle("full"));
-    }
-  });
-
-  window.addEventListener("load", () => {
-    for (let i of document.querySelectorAll(".homepic > img")) {
-      i.addEventListener("click", () => i.classList.toggle("full"));
-    }
-  });
-
-  window.addEventListener("load", () => {
-    for (let i of document.querySelectorAll(".locpic > img")) {
-      i.addEventListener("click", () => i.classList.toggle("full"));
-    }
-  });  
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const slideShows = document.querySelectorAll(".container-dimensions");
-
-    slideShows.forEach(container => {
-      let slideIndex = 0;
-      const slides = container.querySelectorAll(".mySlides");
-      const forward = container.querySelector(".forward");
-      const backward = container.querySelector(".backward");
-
-      function showSlide(n) {
-        slideIndex = (n + slides.length) % slides.length;
-        slides.forEach((slide, i) => {
-          slide.style.display = i === slideIndex ? "block" : "none";
-        });
-      }
-
-      function plusSlides(n) {
-        showSlide(slideIndex + n);
-      }
-
-      forward?.addEventListener("click", () => plusSlides(-1));
-      backward?.addEventListener("click", () => plusSlides(1));
-
-      showSlide(slideIndex); // Initialize
-    });
-  });
-</script>  
+<script>document.addEventListener("DOMContentLoaded",function(){const e=document.createElement("script");e.src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",e.defer=!0,document.body.appendChild(e),e.onload=function(){const e=44.897149,t=13.843393,n=L.map("map").setView([e,t],15);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap contributors"}).addTo(n),L.marker([e,t]).addTo(n).bindPopup("<strong>Apartmani Mendula</strong><br>Bunarska cesta 13<br>Pula, Hrvatska").openPopup()};const t=document.createElement("script");t.src="https://unpkg.com/swiper@11.2.10/swiper-bundle.js",t.defer=!0,document.body.appendChild(t),t.onload=function(){let e;const t=window.matchMedia("(max-width: 768px)");function n(){if(t.matches)return;const e=document.querySelector(".mySwiper .swiper-wrapper");e&&(e.style.cursor="default")}function i(t){e&&e.destroy(!0,!0),e=new Swiper(".mySwiper",{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:t,grabCursor:t,allowTouchMove:t,simulateTouch:t,navigation:{nextEl:".backward",prevEl:".forward"},keyboard:{enabled:!t},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1},on:{init:function(){n()},transitionEnd:function(){n()},click:function(e){!t.matches&&void 0!==e.clickedIndex&&e.slideToLoop(e.clickedIndex)}}})}i(t.matches),t.addEventListener("change",e=>{i(e.matches)})}});window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".gallery > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".homepic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".locpic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll(".container-dimensions");e.forEach(e=>{let t=0,n=e.querySelectorAll(".mySlides"),i=e.querySelector(".forward"),r=e.querySelector(".backward");function o(e){t=(e+n.length)%n.length,n.forEach((e,t)=>{e.style.display=t===t?"block":"none"})}function l(e){o(t+e)}i?.addEventListener("click",()=>l(-1)),r?.addEventListener("click",()=>l(1)),o(t)})});</script>
 </body>
 </html>
