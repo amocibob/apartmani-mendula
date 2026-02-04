@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="all">
   <title>APT Mendula, Pula, Istra, Croatia</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="
-https://unpkg.com/swiper@11.2.10/swiper-bundle.css">  
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link id="swiper-css" rel="stylesheet" href="https://unpkg.com/swiper@11.2.10/swiper-bundle.css" disabled>
+  <link id="leaflet-css" rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" disabled>
+  <script>
+    window.addEventListener('load', function() {
+      document.getElementById('swiper-css').disabled = false;
+      document.getElementById('leaflet-css').disabled = false;
+    });
+  </script>
 </head>
 <body>
   <a id="top"></a>
@@ -2377,7 +2380,13 @@ https://unpkg.com/swiper@11.2.10/swiper-bundle.css">
   </div>
   <div class="totop">
     <a href="#top"><img src="gifovi/backtotop.jpg"  alt="Back to top" title="Povratak na vrh"></a>
-  </div>      
+  </div>
+  <script>
+    window.addEventListener('load', function() {
+      const iframe = document.getElementById('gmap-iframe');
+      iframe.src = "https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Bunarska%20Cesta%2013,Pula&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed";
+    });
+  </script>             
 <script>document.addEventListener("DOMContentLoaded",function(){const e=document.createElement("script");e.src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",e.defer=!0,document.body.appendChild(e),e.onload=function(){const e=44.897149,t=13.843393,n=L.map("map").setView([e,t],15);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap contributors"}).addTo(n),L.marker([e,t]).addTo(n).bindPopup("<strong>Apartmani Mendula</strong><br>Bunarska cesta 13<br>Pula, Hrvatska").openPopup()};const t=document.createElement("script");t.src="https://unpkg.com/swiper@11.2.10/swiper-bundle.js",t.defer=!0,document.body.appendChild(t),t.onload=function(){let e;const t=window.matchMedia("(max-width: 768px)");function n(){if(t.matches)return;const e=document.querySelector(".mySwiper .swiper-wrapper");e&&(e.style.cursor="default")}function i(t){e&&e.destroy(!0,!0),e=new Swiper(".mySwiper",{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:t,grabCursor:t,allowTouchMove:t,simulateTouch:t,navigation:{nextEl:".backward",prevEl:".forward"},keyboard:{enabled:!t},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1},on:{init:function(){n()},transitionEnd:function(){n()},click:function(e){!t.matches&&void 0!==e.clickedIndex&&e.slideToLoop(e.clickedIndex)}}})}i(t.matches),t.addEventListener("change",e=>{i(e.matches)})}});window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".gallery > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".homepic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".locpic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll(".container-dimensions");e.forEach(e=>{let t=0,n=e.querySelectorAll(".mySlides"),i=e.querySelector(".forward"),r=e.querySelector(".backward");function o(e){t=(e+n.length)%n.length,n.forEach((e,t)=>{e.style.display=t===t?"block":"none"})}function l(e){o(t+e)}i?.addEventListener("click",()=>l(-1)),r?.addEventListener("click",()=>l(1)),o(t)})});</script>
 </body>
 </html>
