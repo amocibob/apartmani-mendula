@@ -20,6 +20,11 @@ img{max-width:100%;height:auto;}
 .title,.textleft p,.facebook,.icons,.locpic{padding-right:3.5vw;}
 .title{font-size:22px;}
 .title p{padding:1px;margin:0;}
+.inout{width:100%;}
+.inout img{width:100%;height:5vw;}
+
+
+
 .title p,ha,h4{border-bottom:1px solid;}  
 .textlefthome{padding-right:2.5vw}
 .textlefthome img{padding-top:10vh;width:15vw;}

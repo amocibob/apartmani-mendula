@@ -6,8 +6,8 @@
   <title>APT Mendula, Pula, Istra, Croatia</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@11.2.10/swiper-bundle.css" defer/>  
-  <link rel="stylesheet"href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" defer/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@11.2.10/swiper-bundle.css">  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"> 
 </head>
 <body>
   <a id="top"></a>
@@ -33,6 +33,16 @@
       <div class="homepic"><img src="fotke/PulaVerudelahome.webp" fetchpriority="high" title="Pula, kliknite za povećati" alt="Pula">
       </div>
     </div>
+    <div class="icons1">        
+        <div><img src="gifovi/housep.png" alt="m2" title="m2">
+          <span>55 m2 (x2)</span></div>
+        <div><img src="gifovi/personsp.png" alt="persons" title="persons">
+          <span>2 - 5 OSOBA</span></div> 
+        <div><img src="gifovi/parkingp.png" alt="parking" title="parking">
+          <span>PARKIRNA MJESTA</span></div>                                                     
+        <div><img src="gifovi/dogp.png" alt="dog" title="dog">
+          <span>*PAS DOBRODOŠAO</span></div>                                                                                        
+    </div>                                  
     <div class="galleriesb">       
       <a href="#Sunrise" title="Galerija Apt Sunrise kliknite za ulaz"><div class="linkovi">APARTMAN SUNRISE</div>
       <div class="slide" aria-label="Gallery images for Apt Sunrise" role="group">
@@ -78,17 +88,18 @@
         <div style="background-image:url(thumbs/PulaHavajska02.webp)" aria-hidden="true"></div>
         <div style="background-image:url(thumbs/PulaHidrobaza01.webp)" aria-hidden="true"></div>
       </div></a>
-    </div> 
-    <div class="icons1">        
-        <div><img src="gifovi/housep.png" alt="m2" title="m2">
-          <span>55 m2 (x2)</span></div>
-        <div><img src="gifovi/personsp.png" alt="persons" title="persons">
-          <span>2 - 5 OSOBA</span></div> 
-        <div><img src="gifovi/parkingp.png" alt="parking" title="parking">
-          <span>PARKIRNA MJESTA</span></div>                                                     
-        <div><img src="gifovi/dogp.png" alt="dog" title="dog">
-          <span>*PAS DOBRODOŠAO</span></div>                                                                                        
-    </div>                                    
+    </div>
+    <div class="icons1">
+        <div><img src="gifovi/wi-fip.png" alt="wi-fi" title="wi-fi">
+          <span>free WI-FI</span></div>
+        <div><img src="gifovi/sat-tvp.png" alt="sat-tv" title="sat-tv">
+          <span>*SAT-TV</span></div>                  
+        <div><img src="gifovi/in.png" alt="in" title="out">
+          <span>*14 00</span></div>
+        <div><img src="gifovi/out.png" alt="out" title="out">
+          <span>*10 00</span></div>    
+    </div>
+    <div class="inout"><img src="gifovi/inout.png"  title="inout" alt="inout"></div>           
   </div>
   <div class="wrappersunrise">
     <div class="left-section"><a id="Sunrise"></a>
@@ -1003,16 +1014,6 @@
         </div>                      
       </div>
       <div class="red"><p>*crvena boja znači da je apartman zauzet</p></div>
-    </div>
-    <div class="icons1">
-        <div><img src="gifovi/wi-fip.png" alt="wi-fi" title="wi-fi">
-          <span>free WI-FI</span></div>
-        <div><img src="gifovi/sat-tvp.png" alt="sat-tv" title="sat-tv">
-          <span>*SAT-TV</span></div>                  
-        <div><img src="gifovi/in.png" alt="in" title="out">
-          <span>*14 00</span></div>
-        <div><img src="gifovi/out.png" alt="out" title="out">
-          <span>*10 00</span></div>    
     </div>
   </div>
   </div>                    
@@ -2363,6 +2364,10 @@
   <div class="totop">
     <a href="#top"><img src="gifovi/backtotop.jpg"  alt="Back to top" title="Povratak na vrh"></a>
   </div> 
-<script>document.addEventListener("DOMContentLoaded",function(){const e=document.createElement("script");e.src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",e.defer=!0,document.body.appendChild(e),e.onload=function(){const e=44.897149,t=13.843393,n=L.map("map").setView([e,t],15);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap contributors"}).addTo(n),L.marker([e,t]).addTo(n).bindPopup("<strong>Aparmani Mendula</strong><br>Bunarska cesta 13<br>Pula, Hrvatska").openPopup()};const t=document.createElement("script");t.src="https://unpkg.com/swiper@11.2.10/swiper-bundle.js",t.defer=!0,document.body.appendChild(t),t.onload=function(){let e;const t=window.matchMedia("(max-width: 768px)");function n(){if(t.matches)return;const e=document.querySelector(".mySwiper .swiper-wrapper");e&&(e.style.cursor="default")}function i(t){e&&e.destroy(!0,!0),e=new Swiper(".mySwiper",{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:t,grabCursor:t,allowTouchMove:t,simulateTouch:t,navigation:{nextEl:".backward",prevEl:".forward"},keyboard:{enabled:!t},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1},on:{init:function(){n()},transitionEnd:function(){n()},click:function(e){!t.matches&&void 0!==e.clickedIndex&&e.slideToLoop(e.clickedIndex)}}})}i(t.matches),t.addEventListener("change",e=>{i(e.matches)})}});window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".gallery > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".homepic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".locpic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll(".container-dimensions");e.forEach(e=>{let t=0,n=e.querySelectorAll(".mySlides"),i=e.querySelector(".forward"),r=e.querySelector(".backward");function o(e){t=(e+n.length)%n.length,n.forEach((e,t)=>{e.style.display=t===t?"block":"none"})}function l(e){o(t+e)}i?.addEventListener("click",()=>l(-1)),r?.addEventListener("click",()=>l(1)),o(t)})});</script>
+<script src="https://unpkg.com/swiper@11.2.10/swiper-bundle.js" defer></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+<script>
+let swiper;const mq=window.matchMedia("(max-width: 768px)");function fixDesktopCursor(){if(mq.matches)return;const e=document.querySelector(".mySwiper .swiper-wrapper");e&&(e.style.cursor="default")}function initSwiper(e){swiper&&"function"==typeof swiper.destroy&&swiper.destroy(!0,!0),swiper=new Swiper(".mySwiper",{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:e,grabCursor:e,allowTouchMove:e,simulateTouch:e,navigation:{nextEl:".backward",prevEl:".forward"},keyboard:{enabled:!e},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1},on:{init(){fixDesktopCursor()},transitionEnd(){fixDesktopCursor()},click(e){mq.matches||void 0===e.clickedIndex||e.slideToLoop(e.clickedIndex)}}})}document.addEventListener("DOMContentLoaded",(()=>{initSwiper(mq.matches)})),mq.addEventListener("change",(e=>{initSwiper(e.matches)})),document.addEventListener("DOMContentLoaded",(()=>{const e=44.897149,t=13.843393,o=L.map("map").setView([e,t],15);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap contributors"}).addTo(o),L.marker([e,t]).addTo(o).bindPopup("<strong>Apartmani Mendula</strong><br>Bunarska cesta 13<br>Pula, Hrvatska").openPopup()})),window.addEventListener("load",(()=>{for(let e of document.querySelectorAll(".gallery > img"))e.addEventListener("click",(()=>e.classList.toggle("full")))})),window.addEventListener("load",(()=>{for(let e of document.querySelectorAll(".homepic > img"))e.addEventListener("click",(()=>e.classList.toggle("full")))})),window.addEventListener("load",(()=>{for(let e of document.querySelectorAll(".locpic > img"))e.addEventListener("click",(()=>e.classList.toggle("full")))})),document.addEventListener("DOMContentLoaded",(()=>{document.querySelectorAll(".container-dimensions").forEach((e=>{let t=0;const o=e.querySelectorAll(".mySlides"),r=e.querySelector(".forward"),n=e.querySelector(".backward");function i(e){t=(e+o.length)%o.length,o.forEach(((e,o)=>{e.style.display=o===t?"block":"none"}))}function d(e){i(t+e)}r?.addEventListener("click",(()=>d(-1))),n?.addEventListener("click",(()=>d(1))),i(t)}))}));
+</script>
 </body>
 </html>
