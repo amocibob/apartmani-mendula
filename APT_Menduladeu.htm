@@ -14,7 +14,7 @@
     <div class="left-sectionhome">
       <div class="logo">
         <div class="flags"> 
-            <div><a href="APT_Mendulahrv.htm"><img src="gifovi/hrv.gif" alt="Hrva" title="Hrvatski"></a></div>
+            <div><a href="APT_Mendulahrv.htm"><img src="gifovi/hrv.gif" alt="Hrv" title="Hrvatski"></a></div>
             <div><a href="APT_Menduladeu.htm"><img src="gifovi/deu.gif" alt="Deu" title="Deutsch"></a></div>
             <div><a href="APT_Mendulaita.htm"><img src="gifovi/ita.gif" alt="Ita" title="Italiano"></a></div>
             <div><a href="APT_Mendulaslo.htm"><img src="gifovi/slo.gif" alt="Slo" title="Slovenščina"></a></div>
@@ -2331,7 +2331,7 @@
     </div>
     <div class="right">      
       <div class="mapouter">
-        <div class="gmap_canvas"><iframe class="gmap_iframe" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Bunarska Cesta 13,Pula&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" loading="lazy"></iframe><a href="https://embedgooglemap.xyz/">embed google map</a> 
+        <div class="gmap_canvas"><iframe class="gmap_iframe" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Bunarska Cesta 13,Pula&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" title="googlemaps" loading="lazy"></iframe><a href="https://embedgooglemap.xyz/">embed google map</a> 
       </div>
     </div>
   </div>
@@ -2349,5 +2349,4 @@
   </div>
 <script>document.addEventListener("DOMContentLoaded",function(){const e=document.createElement("script");e.src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",e.defer=!0,document.body.appendChild(e),e.onload=function(){const e=44.897149,t=13.843393,n=L.map("map").setView([e,t],15);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap contributors"}).addTo(n),L.marker([e,t]).addTo(n).bindPopup("<strong>Apartments Mendula</strong><br>Bunarska cesta 13<br>Pula, Kroatien").openPopup()};const t=document.createElement("script");t.src="https://unpkg.com/swiper@11.2.10/swiper-bundle.js",t.defer=!0,document.body.appendChild(t),t.onload=function(){let e;const t=window.matchMedia("(max-width: 768px)");function n(){if(t.matches)return;const e=document.querySelector(".mySwiper .swiper-wrapper");e&&(e.style.cursor="default")}function i(t){e&&e.destroy(!0,!0),e=new Swiper(".mySwiper",{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:t,grabCursor:t,allowTouchMove:t,simulateTouch:t,navigation:{nextEl:".backward",prevEl:".forward"},keyboard:{enabled:!t},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1},on:{init:function(){n()},transitionEnd:function(){n()},click:function(e){!t.matches&&void 0!==e.clickedIndex&&e.slideToLoop(e.clickedIndex)}}})}i(t.matches),t.addEventListener("change",e=>{i(e.matches)})}});window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".gallery > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".homepic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".locpic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll(".container-dimensions");e.forEach(e=>{let t=0,n=e.querySelectorAll(".mySlides"),i=e.querySelector(".forward"),r=e.querySelector(".backward");function o(e){t=(e+n.length)%n.length,n.forEach((e,t)=>{e.style.display=t===t?"block":"none"})}function l(e){o(t+e)}i?.addEventListener("click",()=>l(-1)),r?.addEventListener("click",()=>l(1)),o(t)})});</script>
 </body>
-
 </html>
