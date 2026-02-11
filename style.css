@@ -1,6 +1,6 @@
 
 html,body,ul,li,title p{margin:0;padding:0;}
-body{color:#BE8B06;overflow-y:scroll;overflow-x:hidden;margin:0 3.5% 0 3.5%;justify-content:center;align-items:center;text-align:center;font-family:'Fantasy',serif;}
+body{color:#574005;overflow-y:scroll;overflow-x:hidden;margin:0 3.5% 0 3.5%;justify-content:center;align-items:center;text-align:center;font-family:'Fantasy',serif;}
 ul{list-style:none;}
 body::-webkit-scrollbar{width:10px;}body::-webkit-scrollbar-thumb{border-radius:5px;border:3.5px solid;}
 a{text-decoration:none;color:#ffffffff;}
@@ -52,8 +52,8 @@ th,td{border:1px solid;font-weight:bold;}th{background:#dbdbdb;}td{background:#e
 .pricelist{font-size:1.1vw;}
 .calendar,.calendarsunset{height:59vh;overflow:hidden;position:relative;margin:20px 0 0 0;border:2px solid;}
 h5{padding:20px 0 0 0;font-size:14px;}  
-.month,.monthsunset{background-color:#d3cdbd;height:15vh;border-bottom:2px solid;}.month ul li,.monthsunset ul li{font-size: 14px;text-transform: uppercase;letter-spacing:3px;}
-.prev,.next{background-color:#00000019;font-weight:bold;margin-top:10px;border-top:2px solid;border-bottom:2px solid;padding:5px 10px 5px 10px;position: absolute;}
+.month,.monthsunset{background-color:#d3cdbd;height:15vh;border-bottom:2px solid;}.month ul li,.monthsunset ul li{font-size:14px;letter-spacing:3px;}
+.prev,.next{background-color:#00000019;font-weight:bold;margin-top:10px;border-top:2px solid;border-bottom:2px solid;padding:5px 10px 5px 10px;position:absolute;}
 .prev{left:0;border-radius:0 6px 6px 0;}
 .prev a,.next a{font-size: 25px;color: #ffffff;}
 .next{right:0;border-radius:6px 0 0 6px;}
@@ -86,7 +86,7 @@ h4{font-size:14px;font-weight:bold;}
 .slide{margin-bottom:10px;}.slide:hover{transform:scale(1.05);}
 .swiper-container{margin:20px 0 0 0;}.swiper-container:hover{transform: scale(1.07);}
 .textlefthome img{padding-top:10px;width:6vw;}
-.flags div{width:8.5vw;}
+.flags div{width:100%;justify-content:center;}.flags img{width:5vw;}
 h1{font-size:18px;}
 h2{font-size:18px;margin:0 0 0 0;padding:0 0 0 0;}
 h3{padding:15px 0 0 0;margin-bottom:10px;font-size:14px}
