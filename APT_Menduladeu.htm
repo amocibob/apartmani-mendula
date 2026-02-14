@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">  
 <head> 
-  <meta charset="utf-8"> 
+  <meta charset=utf-8> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Description" content="We offer fully furnished modern apartments">    
   <title>APT Mendula, Pula, Istra, Croatia</title>
@@ -2260,9 +2260,11 @@
       <div class="locpic"><img src="fotke/Lokacija.webp" alt="Lage" title="Lage zum Vergrößern anklicken" loading="lazy"> </div> </div>                   
     <div class="left-sectionl">
       <div class="icons3">        
-        <div><a href="APT_Menduladeuloc.html"><img src="gifovi/location01.webp" alt="location" title="Googlemap - Leafletmap"></a><span>Ansehen auf:</span><span>GoogleMaps - Leafletmap</span></div>
-        <div><a href="http://www.facebook.com/ApartmanMendula" target="_blank" rel="noopener noreferrer"><img src="gifovi/facebook.webp" alt="Facebook" title="ApartmanMendula"></a><span>Seite besuchen:</span><span>ApartmanMendula</span></div> 
-      </div>
+        <div><span>Ansehen auf:</span><a href="APT_Menduladeuloc.html"><img src="gifovi/location01.webp" alt="Leafletmap" title="Leafletmap"></a><span>Leafletmap</span></div>      
+        <div><span>Ansehen auf:</span><a href="https://www.google.com/maps?q=44.89762843751546,13.843179760677465" target="_blank" rel="noopener noreferrer"><img src="gifovi/location01.webp" alt="Googlemaps" title="Googlemaps"></a><span>GoogleMaps</span></div> 
+        <div><span>Seite besuchen:</span><a href="https://apartmani-mendula.com" target="_blank" rel="noopener noreferrer"><img src="gifovi/mendula.webp" style="border-radius:50%; border:3.5px solid #ca8f06;" alt="mendula" title="apartmani-mendula.com"></a><span>apartmani-mendula.com</span></div>                       
+        <div><span>Seite besuchen:</span><a href="http://www.facebook.com/ApartmanMendula/" target="_blank" rel="noopener noreferrer"><img src="gifovi/facebook.webp" alt="Facebook" title="ApartmanMendula"></a><span>ApartmanMendula</span></div> 
+      </div>                   
     </div>
      <div class="right">         
       <div class="title"><p>Liebe Gäste:</p></div> 
@@ -2287,10 +2289,8 @@
       <div><a href="https://wa.me/385915112098" target="_blank" rel="noopener noreferrer"><img src="gifovi/whatsapp.webp" alt="Whatsapp Ante Močibob" title="Whatsapp chat Ante Močibob +385915112098" loading="lazy"></a><span>Whatsapp Ante Močibob</span></div>
       <div><a href="tel:+385915112098"><img src="gifovi/contacts02.webp" alt="Ante Močibob" title="Ante Močibob +385915112098"></a><span>Ante Močibob +385915112098</span></div>                                  
       <div><a href="mailto:a.mocibob@outlook.com"><img src="gifovi/contacts01.webp" alt="E-mail" title="a.mocibob@outlook.com" loading="lazy"></a><span>a.mocibob@outlook.com</span></div>
-  </div>
-  <div class="totop">
-    <a href="#top"><img src="gifovi/backtotop.webp" alt="Back to top" title="Zurück nach oben" loading="lazy"></a>
-  </div>
+      <div><a href="#top"><img src="gifovi/backtotop.webp" alt="Back to top" title="Nach oben" loading="lazy"></a></div>
+  </div>  
 <script src="https://unpkg.com/swiper@11.2.10/swiper-bundle.js" defer></script>
 <script>let swiper;const mq=window.matchMedia("(max-width: 768px)");function fixDesktopCursor(){if(mq.matches)return;let e=document.querySelector(".mySwiper .swiper-wrapper");e&&(e.style.cursor="default")}function initSwiper(e){swiper&&swiper.destroy(!0,!0),swiper=new Swiper(".mySwiper",{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:e,grabCursor:e,allowTouchMove:e,simulateTouch:e,navigation:{nextEl:".backward",prevEl:".forward"},keyboard:{enabled:!e},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1},on:{init(){fixDesktopCursor()},transitionEnd(){fixDesktopCursor()},click(e){mq.matches||void 0===e.clickedIndex||e.slideToLoop(e.clickedIndex)}}})}document.addEventListener("DOMContentLoaded",()=>{initSwiper(mq.matches)}),mq.addEventListener("change",e=>{initSwiper(e.matches)}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".gallery > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".homepic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".locpic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelectorAll(".container-dimensions");e.forEach(e=>{let t=0,r=e.querySelectorAll(".mySlides"),i=e.querySelector(".forward"),l=e.querySelector(".backward");function o(e){t=(e+r.length)%r.length,r.forEach((e,r)=>{e.style.display=r===t?"block":"none"})}function n(e){o(t+e)}i?.addEventListener("click",()=>n(-1)),l?.addEventListener("click",()=>n(1)),o(t)})});</script>
 </body>
