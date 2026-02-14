@@ -79,7 +79,7 @@
       <div><img src="gifovi/housep.webp" alt="m2" title="m2"><span>55 m2 (x2)</span></div>
       <div><img src="gifovi/personsp.webp" alt="persons" title="persons"><span>2 - 5 OSEB</span></div> 
       <div><img src="gifovi/parkingp.webp" alt="parking" title="parking"><span>PARKIRIŠČNA MESTA</span></div>                                                     
-      <div><img src="gifovi/dogp.webp"alt="dog"title="dog"><span>*PESDOBRODOŠEL<span><div>                                                                                        
+      <div><img src="gifovi/dogp.webp" alt="dog" title="dog"><span>*PES DOBRODOŠEL</span><div>                                                                                        
         </div> 
       </div>
     </div>                         
@@ -977,14 +977,10 @@
       <div class="red"><p>*rdeča barva pomeni, da je apartma zaseden</p></div>
     </div>
       <div class="icons1">
-        <div><img src="gifovi/wi-fip.webp" alt="wi-fi" title="wi-fi" alt="icon">
-          <span>free WI-FI</span></div>
-        <div><img src="gifovi/sat-tvp.webp" alt="sat-tv" title="sat-tv" alt="icon">
-          <span>*SAT-TV</span></div>                  
-        <div><img src="gifovi/in.webp" alt="in" title="out" alt="icon">
-          <span>*14 00</span></div>
-        <div><img src="gifovi/out.webp" alt="out" title="out" alt="icon">
-          <span>*10 00</span></div>    
+        <div><img src="gifovi/wi-fip.webp" alt="wi-fi" title="wi-fi" alt="icon"><span>free WI-FI</span></div>
+        <div><img src="gifovi/sat-tvp.webp" alt="sat-tv" title="sat-tv" alt="icon"><span>*SAT-TV</span></div>                  
+        <div><img src="gifovi/in.webp" alt="in" title="out" alt="icon"><span>*14 00</span></div>
+        <div><img src="gifovi/out.webp" alt="out" title="out" alt="icon"><span>*10 00</span></div>    
       </div>           
   </div>        
   <div class="wrappersunset">
@@ -2195,13 +2191,13 @@
     <div class="left-sectionl"> 
       <div class="icons3">        
         <div><a href="APT_Mendulasloloc.html"><img src="gifovi/location01.webp" alt="location" title="Googlemap - Leafletmap"></a><span>Ogled na:</span><span>GoogleMaps - Leafletmap</span></div>
-        <div><a href="http://www.facebook.com/ApartmanMendula/" target="_blank" rel="noopener noreferrer"><img src="gifovi/facebook.webp" alt="Facebook" title="ApartmanMendula"></a><span>Obiščite:</span>ApartmanMendula</span></div> 
+        <div><a href="http://www.facebook.com/ApartmanMendula/" target="_blank" rel="noopener noreferrer"><img src="gifovi/facebook.webp" alt="Facebook" title="ApartmanMendula"></a><span>Obiščite:</span><span>ApartmanMendula</span></div> 
       </div>           
     </div>
     <div class="right">      
       <div class="title"><p>Dragi gostje</p></div>    
       <div class="textleft">
-        <p>Apartmaji <strong>Mendula</strong> se nahajajo v mirnem delu Pulja in ponujajo popolno kombinacijo udobja in pristnega vzdušja.</p>
+        <p><b>Apartmaji Mendula</b> se nahajajo v mirnem delu Pulja in ponujajo popolno kombinacijo udobja in pristnega vzdušja.</p>
         <p>Na prostornem dvorišču so parkirna mesta pod videonadzorom.</p>
         <p>Na voljo sta dva sodobno opremljena in popolnoma opremljena apartmaja velikosti 55 m², primerna za 2 do 5 oseb.</p>
         <p>Obdani s figami, oljkami in mediteranskim zelenjem Apartmaji Mendula nudijo mirno okolje za popolnoma brezskrben in sproščujoč oddih.</p>
@@ -2223,7 +2219,7 @@
     <div><a href="mailto:a.mocibob@outlook.com"><img src="gifovi/contacts01.webp" alt="E-mail" title="a.mocibob@outlook.com" loading="lazy"></a><span>a.mocibob@outlook.com</span></div>
   </div>
   <div class="totop"><a href="#top"><img src="gifovi/backtotop.webp" alt="to top" title="Nazaj na vrh" loading="lazy"></a></div> 
-<script src="https://unpkg.com/swiper@11.2.10/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper@11.2.10/swiper-bundle.js" defer></script>
 <script>let swiper;const mq=window.matchMedia("(max-width: 768px)");function fixDesktopCursor(){if(mq.matches)return;let e=document.querySelector(".mySwiper .swiper-wrapper");e&&(e.style.cursor="default")}function initSwiper(e){swiper&&swiper.destroy(!0,!0),swiper=new Swiper(".mySwiper",{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:e,grabCursor:e,allowTouchMove:e,simulateTouch:e,navigation:{nextEl:".backward",prevEl:".forward"},keyboard:{enabled:!e},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1},on:{init(){fixDesktopCursor()},transitionEnd(){fixDesktopCursor()},click(e){mq.matches||void 0===e.clickedIndex||e.slideToLoop(e.clickedIndex)}}})}document.addEventListener("DOMContentLoaded",()=>{initSwiper(mq.matches)}),mq.addEventListener("change",e=>{initSwiper(e.matches)}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".gallery > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".homepic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".locpic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelectorAll(".container-dimensions");e.forEach(e=>{let t=0,r=e.querySelectorAll(".mySlides"),i=e.querySelector(".forward"),l=e.querySelector(".backward");function o(e){t=(e+r.length)%r.length,r.forEach((e,r)=>{e.style.display=r===t?"block":"none"})}function n(e){o(t+e)}i?.addEventListener("click",()=>n(-1)),l?.addEventListener("click",()=>n(1)),o(t)})});</script>
 </body>
 </html>
