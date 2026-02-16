@@ -72,7 +72,7 @@ h4{font-size:14px;font-weight:bold;}
 @media(max-width:830px){.wrappersurroundings,.wrapperpula,.wrapperlocation,.wrappersunset,.wrappersunrise,.wrapperhome{padding:0 0 0 0;}   
 .left-section,.left-sectionhome,.left-sectionlogo,.right{flex:1 1 100%;margin-right:0;}
 .logo{padding-right:0}
-.title,.textleft p,.icons,.locpic,.textlefthome{padding-right:0;}
+.title,.textleft p,.icons,.locpic,.textlefthome{padding:0 0 0 0;}
 .textleft,.h5{font-size:12px;}
 .title{font-size:20px;}
 .galleriesb{grid-template-columns:repeat(2, minmax(0, 1fr));column-gap:20px;}
@@ -100,7 +100,7 @@ h1{font-size:18px;}h2{font-size:18px;margin:0 0 0 0;padding:0 0 0 0;}h3{padding:
 .mySwiper,.mySwiper *{cursor:pointer !important;}}.swiper a{pointer-events:pointer;}}
 @media(max-width:768px){
 .icons2{grid-template-columns:repeat(3, 1fr);}.icons2 span{padding-bottom:5px;}
-.icons,.icons2{column-gap:0;font-size:1rem;}
+.icons,.icons2{column-gap:3px;font-size:1rem;}
 .icons2 img,.icons3 img{width:4.5vw;}
 .icons img{height:30px;}
 h5{font-size:10px;padding-top:12px;}
