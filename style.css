@@ -71,6 +71,7 @@ h4{font-size:14px;font-weight:bold;}
 .swiper-container:hover{transition:transform 0.9s ease;transform:scale(1.09);}}
 @media(max-width:830px){.wrappersurroundings,.wrapperpula,.wrapperlocation,.wrappersunset,.wrappersunrise,.wrapperhome{padding:0 0 0 0;}   
 .left-section,.left-sectionhome,.left-sectionlogo,.right{flex:1 1 100%;margin-right:0;}
+.logo{padding-right:0}
 .title,.textleft p,.icons,.locpic,.textlefthome{padding-right:0;}
 .textleft,.h5{font-size:12px;}
 .title{font-size:20px;}
