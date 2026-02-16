@@ -10,7 +10,7 @@ img{max-width:100%;height:auto;}
 .right{flex:1 1 60%;}
 .logo{padding-right:12.5%;}.logo p{font-weight:bold;padding:1px; letter-spacing:0.2em;}
 .flags{display:grid;column-gap:6px;grid-template-columns:repeat(5, 1fr);}.flags img{width:2.5rem;}.flags img:hover{transform:scale(1.6);}
-.title,.textleft p,.icons,.locpic{padding-right:3.5vw;}
+.title,.textleft p,.icons,.locpic,h3{padding-right:3.5vw;}
 .title{font-size:22px;}.title p{padding:1px;margin:0;}
 .title p,ha,h4,.logo p{border-bottom:1px solid;} 
 .textlefthome{padding:10vh 2.5vw 0 0}.textlefthome img{width:15vw;}
@@ -64,7 +64,7 @@ li.act{background-color:#FF5F1F;}li.odl{background:linear-gradient(to right,#FF5
 .backward,.forward{cursor:pointer;position:absolute;height:100%;z-index:10;padding:10px 20px 10px 20px;margin:-50px 0 0 0;}
 .backward{right:0;width:50%;}.forward{left:0;width:50%;}
 .gallery{display:grid;gap:21px;padding:37px 0 19px 0;}.gallery img{object-fit:cover;transition:transform 0.9s ease;}.gallery img:hover:not(.full){transform:scale(1.2);}
-#map{aspect-ratio:2/0.8;}#map{border:1px solid;margin-top:20px;}
+#map{aspect-ratio:2/0.8;}#map{border:1px solid;padding:20px 0 20px 0;}
 @media(max-width:1024px){
 h4{font-size:14px;font-weight:bold;}           
 .days li{width:13%;}
@@ -109,7 +109,7 @@ h5{font-size:10px;padding-top:12px;}
 .days{width:100%;}.days li{height:13px;width:12.8%;}}
 @media(max-width:450px){
 .gallery{display:none;}
-.icons2 span{font-size:8px;}
+.icons2 span,.icons span{font-size:8px;}
 .days li{width:12.3%;}
 h5{font-size:8px;}}
  
