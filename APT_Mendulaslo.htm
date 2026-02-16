@@ -6,12 +6,12 @@
   <meta name="Description" content="We offer fully furnished modern apartments">    
   <title>APT Mendula, Pula, Istra, Croatia</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@11.2.10/swiper-bundle.css"/>  
+  <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.css"/>  
 </head>
 <body>
   <a id="top"></a>
   <div class="wrapperhome">
-    <div class="left-sectionhome">
+    <div class="left-section">
       <div class="logo">
         <div class="flags"> 
             <div><a href="APT_Mendulahrv.htm"><img src="gifovi/hrv.gif" alt="Hrv" title="Hrvatski"></a></div>
@@ -84,7 +84,7 @@
       </div>
     </div>                         
   </div>
-  <div class="wrappersunrise">
+  <div class="wrapper">
     <div class="left-section"><a id="Sunrise"></a>
       <div class="title">      
         <div class="star"><img src="gifovi/stars.webp" title="star" alt="star"></div>
@@ -983,7 +983,7 @@
         <div><img src="gifovi/out.webp" alt="out" title="out" alt="icon"><span>*10 00</span></div>    
       </div>           
   </div>        
-  <div class="wrappersunset">
+  <div class="wrapper">
     <div class="left-section"><a id="Sunset"></a>
        <div class="title">    
         <div class="star"><img src="gifovi/stars.webp" title="star" alt="star"></div>
@@ -1883,7 +1883,7 @@
       <div class="red"><p>*rdeča barva pomeni, da je apartma zaseden</p></div> 
     </div>
   </div>              
-  <div class="wrappersurroundings">
+  <div class="wrapper">
     <div class="left-section"><a id="Surroundings"></a>
       <div class="title"><p>Okolica</p></div> 
       <div class="textleft">
@@ -2006,7 +2006,7 @@
       </div>
     </div>
   </div>
-  <div class="wrapperpula">  
+  <div class="wrapper">  
     <div class="left-section"><a id="Pula"></a>
       <div class="title"><p>Pulj - Istra</p></div>      
       <div class="textleft">
@@ -2113,8 +2113,8 @@
     </div>
   </div>
   <div class="pricelist">      
-      <h4>Cenik</h4>
-      <table>
+    <h4>Cenik</h4>
+    <table>
         <tr>
           <th>Od</th>
           <th>Do</th>
@@ -2173,10 +2173,10 @@
         <tr>
           <td colspan="3">*Končno čiščenje ni vključeno v ceno in znaša 40 € + 20 € za psa.</td>
         </tr>
-      </table>
+    </table>
   </div>  
-  <div class="wrapperlocation">    
-    <div class="left-sectionl"><a id="Location"></a>
+  <div class="wrapper">    
+    <div class="left-section"><a id="Location"></a>
       <div class="title"><p>Lokacija</p></div>
       <div class="textleft">                        
         <p>Apartmaji Mendula se nahajajo tik ob vhodu v Pulj, 150 m od glavne ceste, ki vodi v in iz mestnega središča.</p>
@@ -2187,12 +2187,14 @@
     </div>
     <div class="right">        
       <div class="locpic"><img src="fotke/Lokacija.webp" alt="Lokacija" title="Lokacija kliknite za povečavo" loading="lazy"></div>               
-    </div>     
-    <div class="left-sectionl"> 
-        <div class="icons3">        
+    </div> 
+  </div>
+  <div class="wrapper"> 
+    <div class="left-section"> 
+      <div class="icons3">        
         <div><span>Ogled na:</span><a href="APT_Mendulasloloc.html"><img src="gifovi/location01.webp" alt="Leafletmap" title="Leafletmap"></a><span>Leafletmap</span></div>      
         <div><span>Ogled na:</span><a href="https://www.google.com/maps?q=44.89762843751546,13.843179760677465" target="_blank" rel="noopener noreferrer"><img src="gifovi/location01.webp" alt="Googlemaps" title="Googlemaps"></a><span>GoogleMaps</span></div>
-        <div><span>Obiščite:</span><a href="https://apartmani-mendula.com" target="_blank" rel="noopener noreferrer"><img src="gifovi/mendula.webp" style="border-radius:50%; border:3.5px solid #ca8f06;" alt="mendula" title="apartmani-mendula.com"></a><span>apartmani-mendula.com</span></div>                       
+        <div><span>Obiščite:</span><a href="https://apartmani-mendula.com" target="_blank" rel="noopener noreferrer"><img src="gifovi/mendula.webp" style="border-radius:50%; border:2.5px solid #ca8f06;" alt="mendula" title="apartmani-mendula.com"></a><span>apartmani-mendula.com</span></div>                       
         <div><span>Obiščite:</span><a href="http://www.facebook.com/ApartmanMendula/" target="_blank" rel="noopener noreferrer"><img src="gifovi/facebook.webp" alt="Facebook" title="ApartmanMendula"></a><span>ApartmanMendula</span></div> 
       </div>           
     </div>
@@ -2221,7 +2223,7 @@
     <div><a href="mailto:a.mocibob@outlook.com"><img src="gifovi/contacts01.webp" alt="E-mail" title="a.mocibob@outlook.com" loading="lazy"></a><span>a.mocibob@outlook.com</span></div>
     <div><a href="#top"><img src="gifovi/backtotop.webp" alt="to top" title="Nazaj na vrh" loading="lazy"></a></div>     
   </div>  
-<script src="https://unpkg.com/swiper@11.2.10/swiper-bundle.js" defer></script>
+<script src="https://unpkg.com/swiper@11/swiper-bundle.js" defer></script>
 <script>let swiper;const mq=window.matchMedia("(max-width: 768px)");function fixDesktopCursor(){if(mq.matches)return;let e=document.querySelector(".mySwiper .swiper-wrapper");e&&(e.style.cursor="default")}function initSwiper(e){swiper&&swiper.destroy(!0,!0),swiper=new Swiper(".mySwiper",{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:e,grabCursor:e,allowTouchMove:e,simulateTouch:e,navigation:{nextEl:".backward",prevEl:".forward"},keyboard:{enabled:!e},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1},on:{init(){fixDesktopCursor()},transitionEnd(){fixDesktopCursor()},click(e){mq.matches||void 0===e.clickedIndex||e.slideToLoop(e.clickedIndex)}}})}document.addEventListener("DOMContentLoaded",()=>{initSwiper(mq.matches)}),mq.addEventListener("change",e=>{initSwiper(e.matches)}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".gallery > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".homepic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".locpic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelectorAll(".container-dimensions");e.forEach(e=>{let t=0,r=e.querySelectorAll(".mySlides"),i=e.querySelector(".forward"),l=e.querySelector(".backward");function o(e){t=(e+r.length)%r.length,r.forEach((e,r)=>{e.style.display=r===t?"block":"none"})}function n(e){o(t+e)}i?.addEventListener("click",()=>n(-1)),l?.addEventListener("click",()=>n(1)),o(t)})});</script>
 </body>
 </html>
