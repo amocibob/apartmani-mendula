@@ -7,7 +7,6 @@
   <title>APT Mendula, Pula, Istra, Croatia</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.css"> 
-  <script src="https://unpkg.com/swiper@11/swiper-bundle.js" defer></script>   
 </head>
 <body>
   <a id="top"></a>
@@ -1898,7 +1897,7 @@
           <div class="swiper-slide"><div class="numbertext">1 / 25</div><img src="fotke/PulaSaccorgiana01.webp" title="Plaža Saccorgiana" alt="Saccorgiana01" loading="lazy"></div>
           <div class="swiper-slide"><div class="numbertext">2 / 25</div><img src="fotke/PulaSaccorgiana02.webp" title="Plaža Saccorgiana" alt="Saccorgiana02" loading="lazy">          </div>
           <div class="swiper-slide"><div class="numbertext">3 / 25</div><img src="fotke/PulaGortanova01.webp" title="Plaža Gortanova uvala" alt="Gortanova01" loading="lazy">              </div>
-          <div class="swiper-slide"><div class="numbertext">4 / 25</div><img src="fotke/PulaHavajska01.webp" title="Plaža Havajska" alt="Havajska01"></div>
+          <div class="swiper-slide"><div class="numbertext">4 / 25</div><img src="fotke/PulaHavajska01.webp" title="Plaža Havajska" alt="Havajska01" loading="lazy">></div>
           <div class="swiper-slide"><div class="numbertext">5 / 25</div><img src="fotke/PulaAmbrela01.webp" title="Plaža Ambrela" alt="Ambrela01" loading="lazy"></div>
           <div class="swiper-slide"><div class="numbertext">6 / 25</div><img src="fotke/PulaGalebove01.webp" title="Plaža Galebove stijene" alt="Galebove01" loading="lazy"></div>
           <div class="swiper-slide"><div class="numbertext">7 / 25</div><img src="fotke/PulaHidrobaza01.webp" title="Plaža Hidrobaza" alt="Hidrobaza01" loading="lazy"></div>  
@@ -2048,6 +2047,11 @@
     <div><a href="mailto:a.mocibob@outlook.com"><img src="gifovi/contacts01.webp" alt="E-mail" title="a.mocibob@outlook.com"></a><span>a.mocibob@outlook.com</span></div>
   <div><a href="#top"><img src="gifovi/backtotop.webp" alt="To top" title="Povratak na vrh"></a></div>     
   </div>
-<script>let swiper;const mq=window.matchMedia("(max-width: 768px)");function fixDesktopCursor(){if(mq.matches)return;let e=document.querySelector(".mySwiper .swiper-wrapper");e&&(e.style.cursor="default")}function initSwiper(e){swiper&&swiper.destroy(!0,!0),swiper=new Swiper(".mySwiper",{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:e,grabCursor:e,allowTouchMove:e,simulateTouch:e,navigation:{nextEl:".backward",prevEl:".forward"},keyboard:{enabled:!e},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1},on:{init(){fixDesktopCursor()},transitionEnd(){fixDesktopCursor()},click(e){mq.matches||void 0===e.clickedIndex||e.slideToLoop(e.clickedIndex)}}})}document.addEventListener("DOMContentLoaded",()=>{initSwiper(mq.matches)}),mq.addEventListener("change",e=>{initSwiper(e.matches)}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".gallery > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".homepic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".locpic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelectorAll(".container-dimensions");e.forEach(e=>{let t=0,r=e.querySelectorAll(".mySlides"),i=e.querySelector(".forward"),l=e.querySelector(".backward");function o(e){t=(e+r.length)%r.length,r.forEach((e,r)=>{e.style.display=r===t?"block":"none"})}function n(e){o(t+e)}i?.addEventListener("click",()=>n(-1)),l?.addEventListener("click",()=>n(1)),o(t)})});</script>
+<script>window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".homepic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))})</script>
+<script src="https://unpkg.com/swiper@11/swiper-bundle.js" defer></script>     
+<script>let swiper;const mq=window.matchMedia("(max-width: 768px)");function fixDesktopCursor(){if(mq.matches)return;let e=document.querySelector(".mySwiper .swiper-wrapper");e&&(e.style.cursor="default")}function initSwiper(e){swiper&&swiper.destroy(!0,!0),swiper=new Swiper(".mySwiper",{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:e,grabCursor:e,allowTouchMove:e,simulateTouch:e,navigation:{nextEl:".backward",prevEl:".forward"},keyboard:{enabled:!e},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1},on:{init(){fixDesktopCursor()},transitionEnd(){fixDesktopCursor()},click(e){mq.matches||void 0===e.clickedIndex||e.slideToLoop(e.clickedIndex)}}})}document.addEventListener("DOMContentLoaded",()=>{initSwiper(mq.matches)}),mq.addEventListener("change",e=>{initSwiper(e.matches)}),
+document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelectorAll("swiper-slide > img"); e.forEach(e=>{let t=0,r=e.querySelectorAll(".mySlides"),i=e.querySelector(".forward"),l=e.querySelector(".backward");function o(e){t=(e+r.length)%r.length,r.forEach((e,r)=>{e.style.display=r===t?"block":"none"})}function n(e){o(t+e)}i?.addEventListener("click",()=>n(-1)),l?.addEventListener("click",()=>n(1)),o(t)})});</script>
+<script>window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".gallery > img"))e.addEventListener("click",()=>e.classList.toggle("full"))}),
+window.addEventListener("load",()=>{for(let e of document.querySelectorAll(".locpic > img"))e.addEventListener("click",()=>e.classList.toggle("full"))})</script>
 </body>
 </html>
