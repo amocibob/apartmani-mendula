@@ -64,7 +64,7 @@ li.act{background-color:#FF5F1F;}li.odl{background:linear-gradient(to right,#FF5
 .backward,.forward{cursor:pointer;position:absolute;height:100%;z-index:10;padding:10px 20px 10px 20px;margin:-50px 0 0 0;}
 .backward{right:0;width:50%;}.forward{left:0;width:50%;}
 .gallery{display:grid;gap:21px;padding:37px 0 19px 0;}.gallery img{object-fit:cover;transition:transform 0.9s ease;}.gallery img:hover:not(.full){transform:scale(1.2);}
-#map{aspect-ratio:2/0.8;}#map{border:1px solid;padding:20px 0 20px 0;}
+#map,iframe{aspect-ratio:2/0.8;border:1px solid;margin:15px 0 15px 0;}
 @media(max-width:1024px){
 h4{font-size:14px;font-weight:bold;}           
 .days li{width:13%;}
@@ -95,10 +95,12 @@ h1{font-size:18px;}h2{font-size:18px;margin:0 0 0 0;padding:0 0 0 0;}h3{padding:
 .numbertext{padding-top:30px;font-size:24px;}
 .homepic{padding:5px 0 5px 0;}
 .backward,.forward{width:auto;}
-#map{aspect-ratio:2/1.3;}
+#map,iframe{aspect-ratio:2/1.3;}
 @media (min-width: 768px) {
 .mySwiper,.mySwiper *{cursor:pointer !important;}}.swiper a{pointer-events:pointer;}}
 @media(max-width:768px){
+.logo{padding-bottom:10px;}   
+.textlefthome{display:none;}
 .icons2{grid-template-columns:repeat(3, 1fr);}.icons2 span{padding-bottom:5px;}
 .icons,.icons2{column-gap:3px;font-size:1rem;}
 .icons2 img,.icons3 img{width:4.5vw;}
