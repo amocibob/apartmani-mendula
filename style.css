@@ -37,7 +37,8 @@ img{max-width:100%;height:auto;}
 .icons img,.icons1 img{height:clamp(30px,5vw,35px);}
 .icons3{display:grid;grid-template-columns:repeat(1, 1fr);width:55%;}
 .icons3>div{display:flex;flex-direction:column;padding-bottom:50px;}.icons3 a{padding:5px 0 5px 0}
-.galleries{margin:20px 3.5vw 0 0;}.galleriesb{column-gap:3.5vw;margin-top:0;width:100%;}
+.gall{margin:20px 3.5vw 0 0;}.galleriesb{column-gap:3.5vw;margin-top:0;width:100%;}
+.lazy-bg{background-size:cover;background-position:center;background-repeat:no-repeat;}
 .slide{overflow:hidden;position:relative;border-radius:3%;border:1px solid;width:100%;aspect-ratio:3/2;margin-bottom: 15px;}.slide:hover:hover{transition:transform 0.5s ease;transform:scale(1.05);}
 .slide>div{background-position:center;height:100%;background-size:cover;position:absolute;animation:slide 16s infinite;opacity:0;}
 .mySlides img{display:block;}
@@ -88,17 +89,16 @@ h1{font-size:18px;}h2{font-size:18px;margin:0 0 0 0;padding:0 0 0 0;}h3{padding:
 .icons{grid-template-columns:repeat(4, 1fr);padding:5px 0 0 0;column-gap:8px;}
 .icons span,.icons1 span,.icons2 span,.icons3 span{font-size:10px;}
 .icons3{grid-template-columns:repeat(4, 1fr);column-gap:0;width:100%;}.icons3{padding:0 0 0 0;}.icons3>div{grid-template-columns:repeat(2, 1fr);padding-bottom:0}.icons3 a{padding-bottom:5px}
+.icons1{padding-top:15px;}
 .icons2 div{padding-bottom:5px;gap:5px;} 
-.galleries{display:none}
+.gall{display:none}
 .pricelist{padding-bottom:5px;font-size:2vw;}
 .star img{width:100px;}
 .numbertext{padding-top:30px;font-size:24px;}
-.homepic{padding:5px 0 5px 0;}
+.homepic{padding:5px 0 0 0;}
 .backward,.forward{width:auto;}
-#map,iframe{aspect-ratio:2/1.3;}
-@media (min-width: 768px) {
-.mySwiper,.mySwiper *{cursor:pointer !important;}}.swiper a{pointer-events:pointer;}}
-@media(max-width:768px){
+#map,iframe{aspect-ratio:2/1.3;}}
+@media(max-width:768px){   
 .logo{padding-bottom:10px;}   
 .textlefthome{display:none;}
 .icons2{grid-template-columns:repeat(3, 1fr);}.icons2 span{padding-bottom:5px;}
