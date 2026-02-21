@@ -2048,7 +2048,7 @@
   <div><a href="#top"><img src="gifovi/backtotop.webp" alt="To top" title="Povratak na vrh" loading="lazy" decoding="async"></a><span>Povratak na vrh</span></div>     
   </div>
   <script>window.addEventListener("load",()=>{document.querySelectorAll(".gallery > img, .homepic > img, .locpic > img").forEach(img=>{img.addEventListener("click",()=>img.classList.toggle("full"));});});</script> 
-  <script src="https://unpkg.com/swiper@11/swiper-bundle.js" defer></script>
+  <script src="https://unpkg.com/swiper@11/swiper-bundle.js"></script>
   <script>let swiper;const mq=window.matchMedia("(max-width:768px)");function initSwiperWhenVisible(){let e=document.querySelector(".mySwiper");if(!e)return;let i=new IntersectionObserver(e=>{e[0].isIntersecting&&(initSwiper(mq.matches),i.disconnect())},{rootMargin:"300px"});i.observe(e)}function initSwiper(e){swiper&&swiper.destroy(!0,!0),swiper=new Swiper(".mySwiper",{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:e,grabCursor:e,allowTouchMove:e,simulateTouch:e,preloadImages:!1,lazy:!0,watchSlidesProgress:!0,navigation:{nextEl:".backward",prevEl:".forward"},keyboard:{enabled:!e},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1}})}document.addEventListener("DOMContentLoaded",initSwiperWhenVisible),mq.addEventListener("change",initSwiperWhenVisible);</script>
   <script>const bgObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){const el=entry.target;el.style.backgroundImage=`url(${el.dataset.bg})`;bgObserver.unobserve(el);}});},{rootMargin:"300px"});document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".lazy-bg").forEach(el=>{bgObserver.observe(el);});});</script>
 </body>
