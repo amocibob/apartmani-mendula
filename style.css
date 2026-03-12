@@ -81,7 +81,7 @@ h4{font-size:14px;font-weight:bold;}
 .swiper-container{margin:20px 0 0 0;}.swiper-container:hover{transform: scale(1.07);}
 .textlefthome img{padding-top:10px;width:6vw;}
 h1{font-size:22px;}h2{font-size:18px;margin:0 0 0 0;padding:0 0 0 0;}h3{padding:0 0 0 0;margin-bottom:5px;font-size:12px}h4{margin:15px 0 0 0;}h5{padding:5px 0 0 0;}
-.calendar,.calendarsunset{height:45vh;}
+.calendar,.calendarsunset{height:47vh;}
 .month,.monthsunset{height:10vh;}.month ul,.monthsunset ul{margin:0;}
 .red p{font-size:12px;}
 .prev a,.next a{font-size:15px;}
@@ -97,7 +97,7 @@ h1{font-size:22px;}h2{font-size:18px;margin:0 0 0 0;padding:0 0 0 0;}h3{padding:
 .star img{width:100px;}
 .numbertext{padding-top:30px;font-size:26px;}
 .homepic{padding:5px 0 0 0;}
-iframe{margin:0 0 0 0;width:100%}
+iframe{margin:0 0 0 0;width:100vw;}
 #map,iframe{aspect-ratio:2/1.3;}}
 @media(max-width:768px){   
 .logo{padding-bottom:10px;}   
@@ -108,7 +108,7 @@ iframe{margin:0 0 0 0;width:100%}
 .icons img{height:30px;}
 .numbertext{font-size:22px;}
 h5{font-size:10px;padding-top:12px;}
-.calendar,.calendarsunset{height:215px;}
+.calendar,.calendarsunset{height:227px;}
 .month,.monthsunset{height:50px;}
 .days{width:100%;}.days li{height:13px;width:12.8%;}}
 @media(max-width:450px){
