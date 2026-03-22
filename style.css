@@ -15,16 +15,16 @@ img{max-width:100%;height:auto;}
 .title p,.logo p{border-bottom:1px solid;} 
 .textlefthome{padding:10vh 2.5vw 0 0}.textlefthome img{width:15vw;}
 .textleft{text-align:left;font-size:14px;}
-.homepic{padding:15px 0 15px 0;}.homepic img,.locpic img{border:1px solid #52aacd;border-radius:2%;}
+.homepic{padding:15px 0 15px 0;}.homepic img,.locpic img{border:1px solid #52aacd;border-radius:2%;cursor:pointer;}
 .homepic img.full,.locpic img.full,.gallery img.full{width:100vw;height:100vh;position:fixed;top:0;left:0;z-index:999;object-fit:cover;box-sizing:border-box;}
 .locpic{padding:25px 0 10px 0;}
 .locpic img:hover:not(.full),.homepic img:hover:not(.full){transition:transform 0.9s ease;transform:scale(1.05);}
-.gallery{display:grid;gap:21px;padding:37px 0 19px 0;}  
+.gallery{display:grid;gap:21px;padding:37px 0 19px 0;}.gallery img{cursor:pointer;}  
 .icons2 img,.icons3 img,.flags img{border-radius:50%;border:2px solid #ca8f06;width:30px;}.icons2 img:hover,.icons3 img:hover{box-shadow:0 0 10px #FEAD15;transition:transform 0.3s ease;transform:scale(1.34);}
 .icons1,star,table,.days,.galleriesb,.slide>div{width:100%;}
 .linkovi{font-weight:bold;color:#5f4504;;display:block;position:relative;padding:0.1em 0;font-size:14px;margin:5px 0 5px 0;}.linkovi::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:0.1em;background-color:#5f4504;;opacity:0;transition:opacity 800ms,transform 300ms;}.linkovi::after{opacity:1;transform:scale(0);transform-origin:center;}.linkovi:hover::after,.linkovi:focus::after{transform:scale(1);}
 .icons2 img.icons3 img,.slide,.locpic img,.gallery img,.homepic img,.flags img{box-shadow:0 6px 4px rgba(0, 0, 0, 0.45);}              
-.swiper-container{margin-top: 25px;overflow:hidden;}.swiper-container:hover{transition:transform 0.9s ease;transform:scale(1.09);}.swiper-container img,.swiper-wrapper img{vertical-align:middle;}.swiper-slide{display:block;background-position:center;background-size:cover;}.swiper-slide img{display:block;border:1px solid #000000;}
+.swiper-container{margin-top: 25px;overflow:hidden;cursor:pointer;}.swiper-container:hover{transition:transform 0.9s ease;transform:scale(1.09);}.swiper-container img,.swiper-wrapper img{vertical-align:middle;}.swiper-slide{display:block;background-position:center;background-size:cover;}.swiper-slide img{display:block;border:1px solid #000000;}
 .icons>div,.icons1>div,.icons2>div{align-items:center;display:flex;flex-direction:column;}
 .icons1>div,.icons2>div{gap:10px;}
 .icons>div{gap:5px;}
