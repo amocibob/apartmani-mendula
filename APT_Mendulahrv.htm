@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="hr">  
 <head> 
-  <meta charset=utf-8> 
+  <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Description" content="We offer fully furnished modern apartments">   
   <title>APT Mendula, Pula, Istra, Croatia</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.css"/>  
+  <link rel="stylesheet" href="https://unpkg.com/swiper@14.1/swiper-bundle.css">  
 </head>
 <body>
   <a id="top"></a>
@@ -2192,9 +2192,9 @@
     <div><a href="mailto:a.mocibob@outlook.com"><img src="gifovi/contacts01.webp" alt="E-mail" title="a.mocibob@outlook.com" loading="lazy" decoding="async"></a><span>a.mocibob@outlook.com</span></div>
   <div><a href="#top"><img src="gifovi/backtotop.webp" alt="To top" title="Povratak na vrh" loading="lazy" decoding="async"></a><span>Povratak na vrh</span></div>     
   </div>
-  <script>window.addEventListener("load",()=>{document.querySelectorAll(".gallery > img, .homepic > img, .locpic > img").forEach(img=>{img.addEventListener("click",()=>img.classList.toggle("full"));});});</script> 
-  <script src="https://unpkg.com/swiper@11/swiper-bundle.js" defer></script>
-  <script>let swiper;const mq=window.matchMedia("(max-width:768px)");function initSwiperWhenVisible(){let e=document.querySelector(".mySwiper");if(!e)return;let i=new IntersectionObserver(e=>{e[0].isIntersecting&&(initSwiper(mq.matches),i.disconnect())},{rootMargin:"300px"});i.observe(e)}function initSwiper(e){swiper&&swiper.destroy(!0,!0),swiper=new Swiper(".mySwiper",{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:e,grabCursor:e,allowTouchMove:e,simulateTouch:e,preloadImages:!1,lazy:!0,watchSlidesProgress:!0,navigation:{nextEl:".backward",prevEl:".forward"},keyboard:{enabled:!e},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1}})}document.addEventListener("DOMContentLoaded",initSwiperWhenVisible),mq.addEventListener("change",initSwiperWhenVisible);</script>
-  <script>const bgObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){const el=entry.target;el.style.backgroundImage=`url(${el.dataset.bg})`;bgObserver.unobserve(el);}});},{rootMargin:"300px"});document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".lazy-bg").forEach(el=>{bgObserver.observe(el);});});</script>
+ <script>window.addEventListener("load", ()=>{document.querySelectorAll(".gallery img, .homepic img, .locpic img").forEach(img=>{img.addEventListener("click", ()=>img.classList.toggle("full"));});});</script> 
+  <script src="https://unpkg.com/swiper@14/swiper-bundle.js" defer></script>
+  <script>const swipers=new Map,mq=window.matchMedia("(max-width: 768px)");function initSwiper(e){const r=swipers.get(e);r&&"function"==typeof r.destroy&&(r.destroy(!0,!0),swipers.delete(e));const t=e.closest(".swiper-section")||e.parentElement,s=t.querySelector(".backward"),i=t.querySelector(".forward"),o=new Swiper(e,{effect:"coverflow",slidesPerView:"auto",loop:!0,centeredSlides:mq.matches,grabCursor:mq.matches,allowTouchMove:mq.matches,simulateTouch:mq.matches,watchSlidesProgress:!0,navigation:{nextEl:s,prevEl:i},keyboard:{enabled:!mq.matches},coverflowEffect:{rotate:0,stretch:0,depth:0,modifier:1}});swipers.set(e,o)}function initAllSwipers(){document.querySelectorAll(".mySwiper").forEach(e=>{swipers.has(e)||initSwiper(e)})}const swiperObserver=new IntersectionObserver(e=>{e.forEach(e=>{e.isIntersecting&&(initSwiper(e.target),swiperObserver.unobserve(e.target))})},{rootMargin:"300px"});document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".mySwiper").forEach(e=>{swiperObserver.observe(e)})}),mq.addEventListener("change",()=>{swipers.forEach((e,r)=>{initSwiper(r)})});</script>
+  <script>const bgObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if (entry.isIntersecting){const el=entry.target;el.style.backgroundImage=`url(${el.dataset.bg})`;bgObserver.unobserve(el)}})},{rootMargin:"300px"});document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".lazy-bg").forEach(el=>{bgObserver.observe(el)})});</script>
 </body>
 </html>
